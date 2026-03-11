@@ -19,26 +19,16 @@
 
 ## インストール
 
-### 方法1: スクリプトで自動インストール
+1. このリポジトリページの **「Code」→「Download ZIP」** からダウンロード
+2. ZIPを展開
+3. `install.sh` を実行
 
 ```bash
-# Git clone の場合
-git clone https://github.com/<org>/visualize-doc-skill.git
-cd visualize-doc-skill
-./install.sh
-
-# ZIP ダウンロードの場合
-# 1. このリポジトリページの「Code」→「Download ZIP」からDL
-# 2. 展開して中に入る
 cd visualize-doc-skill-main
 ./install.sh
 ```
 
-### 方法2: 手動コピー
-
-```bash
-cp -r skill/ ~/.claude/skills/visualize-doc-v2/
-```
+手動の場合は `skill/` フォルダを `~/.claude/skills/visualize-doc-v2/` にコピーしてもOKです。
 
 ## 使い方
 
