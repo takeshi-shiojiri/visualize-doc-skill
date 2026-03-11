@@ -75,7 +75,7 @@ def _load_design_tokens():
     # exec() 環境用: 既知のスキルパスを試行
     _skill_paths = [
         '/mnt/skills/user/visualize-doc/references/design-system.md',
-        '/Users/shiojiritakeshi/.claude/skills/visualize-doc-v2/references/design-system.md',
+        _os.path.expanduser('~/.claude/skills/visualize-doc-v2/references/design-system.md'),
     ]
     _candidates.extend(_skill_paths)
 
