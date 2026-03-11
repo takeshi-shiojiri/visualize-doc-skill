@@ -23,12 +23,12 @@
 
 ```bash
 # Git clone の場合
-git clone https://github.com/takeshi-shiojiri/visualize-doc-skill.git
+git clone https://github.com/<org>/visualize-doc-skill.git
 cd visualize-doc-skill
 ./install.sh
 
 # ZIP ダウンロードの場合
-# 1. https://github.com/takeshi-shiojiri/visualize-doc-skill/archive/refs/heads/main.zip をDL
+# 1. このリポジトリページの「Code」→「Download ZIP」からDL
 # 2. 展開して中に入る
 cd visualize-doc-skill-main
 ./install.sh
