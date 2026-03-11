@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1000 1289.2"
+     width="1000" height="1289.2"
+     role="img" aria-labelledby="diagram-title diagram-desc"
+     style="font-family: 'Noto Sans CJK JP', 'Hiragino Sans', 'Yu Gothic', 'sans-serif';">
+  <title id="diagram-title">アジャイル開発サイクル</title>
+  <desc id="diagram-desc">スクラムベースの反復型開発プロセス</desc>
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#D5D8DC" flood-opacity="0.4"/>
+    </filter>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10"
+            refX="8" refY="5" orient="auto-start-reverse">
+      <polygon points="0 0, 10 5, 0 10" fill="#636E72"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="1289.2" fill="#F5F7FA" rx="0"/>
+  <text x="500.0" y="76.8" text-anchor="middle" font-size="28px" font-weight="bold" fill="#2D3436" dominant-baseline="central">アジャイル開発サイクル</text>
+  <text x="500.0" y="116.39999999999999" text-anchor="middle" font-size="18px"  fill="#636E72" dominant-baseline="central">スクラムベースの反復型開発プロセス</text>
+  <line x1="500.0" y1="289.2" x2="500.0" y2="353.2" stroke="#636E72" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="500.0" y1="455.2" x2="500.0" y2="519.2" stroke="#636E72" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="500.0" y1="621.2" x2="500.0" y2="685.2" stroke="#636E72" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="500.0" y1="787.2" x2="500.0" y2="851.2" stroke="#636E72" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="500.0" y1="953.2" x2="500.0" y2="1017.2" stroke="#636E72" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M 592.4 1068.2 C 632.4 1068.2 632.4 238.2 583.9 238.2" fill="none" stroke="#636E72" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arrowhead)"/>
+  <text x="637.4" y="653.2" text-anchor="start" font-size="12px"  fill="#95A5A6" dominant-baseline="central">次スプリント</text>
+  <rect x="416.15" y="187.2" width="167.7" height="102" rx="8" fill="#EBF5FB" stroke="#74B9FF" stroke-width="2" filter="url(#shadow)"/>
+  <text x="500.0" y="211.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">スプリント計画</text>
+  <text x="500.0" y="240.2" text-anchor="middle" font-size="14px"  fill="#2D3436" dominant-baseline="central">バックログ選定</text>
+  <text x="500.0" y="262.2" text-anchor="middle" font-size="14px"  fill="#2D3436" dominant-baseline="central">見積もり・担当決定</text>
+  <rect x="442.75" y="353.2" width="114.5" height="102" rx="8" fill="#E8F8F5" stroke="#00B894" stroke-width="2" filter="url(#shadow)"/>
+  <text x="500.0" y="377.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">設計</text>
+  <text x="500.0" y="406.2" text-anchor="middle" font-size="14px"  fill="#2D3436" dominant-baseline="central">技術設計</text>
+  <text x="500.0" y="428.2" text-anchor="middle" font-size="14px"  fill="#2D3436" dominant-baseline="central">タスク分解</text>
+  <rect x="416.15" y="519.2" width="167.7" height="102" rx="8" fill="#FEF9E7" stroke="#FDCB6E" stroke-width="2" filter="url(#shadow)"/>
+  <text x="500.0" y="543.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">実装</text>
+  <text x="500.0" y="572.2" text-anchor="middle" font-size="14px"  fill="#2D3436" dominant-baseline="central">コーディング</text>
+  <text x="500.0" y="594.2" text-anchor="middle" font-size="14px"  fill="#2D3436" dominant-baseline="central">ペアプログラミング</text>
+  <rect x="429.45" y="685.2" width="141.1" height="102" rx="8" fill="#FDEDEC" stroke="#FF7675" stroke-width="2" filter="url(#shadow)"/>
+  <text x="500.0" y="709.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">テスト</text>
+  <text x="500.0" y="738.2" text-anchor="middle" font-size="14px"  fill="#2D3436" dominant-baseline="central">自動テスト</text>
+  <text x="500.0" y="760.2" text-anchor="middle" font-size="14px"  fill="#2D3436" dominant-baseline="central">コードレビュー</text>
+  <rect x="407.6" y="851.2" width="184.8" height="102" rx="8" fill="#F0EDFF" stroke="#A29BFE" stroke-width="2" filter="url(#shadow)"/>
+  <text x="500.0" y="875.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">スプリントレビュー</text>
+  <text x="500.0" y="904.2" text-anchor="middle" font-size="14px"  fill="#2D3436" dominant-baseline="central">デモ・フィードバック</text>
+  <text x="500.0" y="926.2" text-anchor="middle" font-size="14px"  fill="#2D3436" dominant-baseline="central">受入確認</text>
+  <rect x="407.6" y="1017.2" width="184.8" height="102" rx="8" fill="#FDEEF4" stroke="#FD79A8" stroke-width="2" filter="url(#shadow)"/>
+  <text x="500.0" y="1041.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">レトロスペクティブ</text>
+  <text x="500.0" y="1070.2" text-anchor="middle" font-size="14px"  fill="#2D3436" dominant-baseline="central">振り返り</text>
+  <text x="500.0" y="1092.2" text-anchor="middle" font-size="14px"  fill="#2D3436" dominant-baseline="central">改善アクション決定</text>
+  <rect x="60" y="1179.2" width="880" height="50" rx="8" fill="#E8F8F5" stroke="#00B894" stroke-width="2"/>
+  <text x="500.0" y="1204.2" text-anchor="middle" font-size="14px"  fill="#2D3436" dominant-baseline="central">✦ 1スプリント = 2週間、継続的に改善を回す</text>
+</svg>

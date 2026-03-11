@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 800 600"
+     width="800" height="600"
+     role="img" aria-labelledby="diagram-title diagram-desc"
+     style="font-family: 'Noto Sans CJK JP', 'Hiragino Sans', 'Yu Gothic', 'sans-serif';">
+  <title id="diagram-title">トレードオフ曲線</title>
+  <desc id="diagram-desc">速度と品質の二律背反</desc>
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#D5D8DC" flood-opacity="0.4"/>
+    </filter>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10"
+            refX="8" refY="5" orient="auto-start-reverse">
+      <polygon points="0 0, 10 5, 0 10" fill="#636E72"/>
+    </marker>
+  </defs>
+  <rect width="800" height="600" fill="#F5F7FA" rx="0"/>
+  <text x="400.0" y="45" text-anchor="middle" font-size="28px" font-weight="bold" fill="#2D3436" dominant-baseline="central">開発速度 vs 品質 トレードオフ</text>
+  <text x="400.0" y="72" text-anchor="middle" font-size="18px"  fill="#636E72" dominant-baseline="central">最適バランスの可視化</text>
+  <line x1="120" y1="480" x2="680" y2="480" stroke="#636E72" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="120" y1="480" x2="120" y2="130" stroke="#636E72" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="400.0" y="515" text-anchor="middle" font-size="14px" font-weight="bold" fill="#2D3436">開発速度 →</text>
+  <text x="85" y="305.0" text-anchor="middle" font-size="14px" font-weight="bold" fill="#2D3436" transform="rotate(-90,85,305.0)">品質 →</text>
+  <polyline points="165,235 175,280 185,311 195,334 205,351 215,365 225,376 235,385 245,392 256,399 266,405 276,409 286,414 296,418 306,421 316,424 326,427 336,429 346,431 356,434 366,435 376,437 387,439 397,440 407,442 417,443 427,444 437,445 447,446 457,447 467,448 477,449 487,450 497,451 508,452 518,452 528,453 538,454 548,454 558,455 568,456 578,456 588,457 598,457 608,458 618,458 628,458 639,459 649,459 659,460" fill="none" stroke="#74B9FF" stroke-width="3"/>
+  <circle cx="204.0" cy="217.5" r="8" fill="#00B894" stroke="#FFFFFF" stroke-width="2"/>
+  <text x="204.0" y="201.5" text-anchor="middle" font-size="13px" font-weight="bold" fill="#2D3436">MVP</text>
+  <text x="204.0" y="239.5" text-anchor="middle" font-size="11px" fill="#95A5A6">速度重視</text>
+  <circle cx="400.0" cy="357.5" r="8" fill="#A29BFE" stroke="#FFFFFF" stroke-width="2"/>
+  <text x="400.0" y="341.5" text-anchor="middle" font-size="13px" font-weight="bold" fill="#2D3436">最適点</text>
+  <text x="400.0" y="379.5" text-anchor="middle" font-size="11px" fill="#95A5A6">バランス</text>
+  <circle cx="568.0" cy="417.0" r="8" fill="#FF7675" stroke="#FFFFFF" stroke-width="2"/>
+  <text x="568.0" y="401.0" text-anchor="middle" font-size="13px" font-weight="bold" fill="#2D3436">エンタープライズ</text>
+  <text x="568.0" y="439.0" text-anchor="middle" font-size="11px" fill="#95A5A6">品質重視</text>
+  <text x="660" y="160" text-anchor="end" font-size="12px" font-style="italic" fill="#74B9FF">効率フロンティア</text>
+  <rect x="60" y="535" width="680" height="50" rx="8" fill="#E8F8F5" stroke="#00B894" stroke-width="2"/>
+  <text x="400.0" y="560.0" text-anchor="middle" font-size="14px"  fill="#2D3436" dominant-baseline="central">✦ 曲線上が最適解。曲線の内側（左下）は改善余地あり</text>
+</svg>

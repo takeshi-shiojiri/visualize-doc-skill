@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1100 633.2"
+     width="1100" height="633.2"
+     role="img" aria-labelledby="diagram-title diagram-desc"
+     style="font-family: 'Noto Sans CJK JP', 'Hiragino Sans', 'Yu Gothic', 'sans-serif';">
+  <title id="diagram-title">ECサイト カスタマージャーニーマップ</title>
+  <desc id="diagram-desc">新規顧客の認知から推奨までの体験設計</desc>
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#D5D8DC" flood-opacity="0.4"/>
+    </filter>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10"
+            refX="8" refY="5" orient="auto-start-reverse">
+      <polygon points="0 0, 10 5, 0 10" fill="#636E72"/>
+    </marker>
+  </defs>
+  <rect width="1100" height="633.2" fill="#F5F7FA" rx="0"/>
+  <text x="550.0" y="76.8" text-anchor="middle" font-size="28px" font-weight="bold" fill="#2D3436" dominant-baseline="central">ECサイト カスタマージャーニーマップ</text>
+  <text x="550.0" y="116.39999999999999" text-anchor="middle" font-size="18px"  fill="#636E72" dominant-baseline="central">新規顧客の認知から推奨までの体験設計</text>
+  <rect x="212.60000000000002" y="195.2" width="142.79999999999998" height="40" rx="20" fill="#74B9FF"/>
+  <text x="284.0" y="215.2" text-anchor="middle" font-size="20px" font-weight="bold" fill="#FFFFFF" dominant-baseline="central">認知</text>
+  <rect x="380.6" y="195.2" width="142.79999999999998" height="40" rx="20" fill="#00B894"/>
+  <text x="452.0" y="215.2" text-anchor="middle" font-size="20px" font-weight="bold" fill="#FFFFFF" dominant-baseline="central">検討</text>
+  <rect x="548.6" y="195.2" width="142.79999999999998" height="40" rx="20" fill="#FDCB6E"/>
+  <text x="620.0" y="215.2" text-anchor="middle" font-size="20px" font-weight="bold" fill="#FFFFFF" dominant-baseline="central">購入</text>
+  <rect x="716.6" y="195.2" width="142.79999999999998" height="40" rx="20" fill="#FF7675"/>
+  <text x="788.0" y="215.2" text-anchor="middle" font-size="20px" font-weight="bold" fill="#FFFFFF" dominant-baseline="central">利用</text>
+  <rect x="884.6" y="195.2" width="142.79999999999998" height="40" rx="20" fill="#A29BFE"/>
+  <text x="956.0" y="215.2" text-anchor="middle" font-size="20px" font-weight="bold" fill="#FFFFFF" dominant-baseline="central">推奨</text>
+  <rect x="60" y="243.2" width="980" height="55" rx="0" fill="#FFFFFF"/>
+  <line x1="60" y1="243.2" x2="1040" y2="243.2" stroke="#D5D8DC" stroke-width="1" stroke-dasharray="6,3"/>
+  <rect x="60" y="243.2" width="5" height="55" rx="0" fill="#74B9FF"/>
+  <text x="135.0" y="270.7" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">ユーザー行動</text>
+  <text x="220.0" y="270.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">SNS広告を見る</text>
+  <text x="388.0" y="270.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">商品ページを比較</text>
+  <text x="556.0" y="270.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">カートに入れて決済</text>
+  <text x="724.0" y="270.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">商品を使用</text>
+  <text x="892.0" y="270.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">レビューを投稿</text>
+  <rect x="60" y="298.2" width="980" height="55" rx="0" fill="#FAFBFC"/>
+  <line x1="60" y1="298.2" x2="1040" y2="298.2" stroke="#D5D8DC" stroke-width="1" stroke-dasharray="6,3"/>
+  <rect x="60" y="298.2" width="5" height="55" rx="0" fill="#FDCB6E"/>
+  <text x="135.0" y="325.7" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">感情</text>
+  <text x="220.0" y="325.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">興味・期待</text>
+  <text x="388.0" y="325.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">迷い・不安</text>
+  <text x="556.0" y="325.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">期待・緊張</text>
+  <text x="724.0" y="325.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">満足 or 不満</text>
+  <text x="892.0" y="325.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">共有欲・貢献感</text>
+  <rect x="60" y="353.2" width="980" height="55" rx="0" fill="#FFFFFF"/>
+  <line x1="60" y1="353.2" x2="1040" y2="353.2" stroke="#D5D8DC" stroke-width="1" stroke-dasharray="6,3"/>
+  <rect x="60" y="353.2" width="5" height="55" rx="0" fill="#00B894"/>
+  <text x="135.0" y="380.7" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">タッチポイント</text>
+  <text x="220.0" y="380.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">Instagram広告</text>
+  <text x="388.0" y="380.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">LP・商品ページ</text>
+  <text x="556.0" y="380.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">ECカート・決済</text>
+  <text x="724.0" y="380.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">メール・LINE</text>
+  <text x="892.0" y="380.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">レビューサイト</text>
+  <rect x="60" y="408.2" width="980" height="55" rx="0" fill="#FAFBFC"/>
+  <line x1="60" y1="408.2" x2="1040" y2="408.2" stroke="#D5D8DC" stroke-width="1" stroke-dasharray="6,3"/>
+  <rect x="60" y="408.2" width="5" height="55" rx="0" fill="#FF7675"/>
+  <text x="135.0" y="435.7" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">課題</text>
+  <text x="220.0" y="435.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">認知度が低い</text>
+  <text x="388.0" y="435.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">競合との差別化</text>
+  <text x="556.0" y="435.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">カート離脱率</text>
+  <text x="724.0" y="435.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">サポート品質</text>
+  <text x="892.0" y="435.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">レビュー促進</text>
+  <line x1="60" y1="463.2" x2="1040" y2="463.2" stroke="#D5D8DC" stroke-width="1" stroke-dasharray="6,3"/>
+  <line x1="368.0" y1="243.2" x2="368.0" y2="463.2" stroke="#D5D8DC" stroke-width="1" stroke-dasharray="4,4" opacity="0.5"/>
+  <line x1="536.0" y1="243.2" x2="536.0" y2="463.2" stroke="#D5D8DC" stroke-width="1" stroke-dasharray="4,4" opacity="0.5"/>
+  <line x1="704.0" y1="243.2" x2="704.0" y2="463.2" stroke="#D5D8DC" stroke-width="1" stroke-dasharray="4,4" opacity="0.5"/>
+  <line x1="872.0" y1="243.2" x2="872.0" y2="463.2" stroke="#D5D8DC" stroke-width="1" stroke-dasharray="4,4" opacity="0.5"/>
+  <rect x="60" y="523.2" width="980" height="50" rx="8" fill="#E8F8F5" stroke="#00B894" stroke-width="2"/>
+  <text x="550.0" y="548.2" text-anchor="middle" font-size="14px"  fill="#2D3436" dominant-baseline="central">✦ 各フェーズの課題に対応した施策を設計し、体験全体を最適化する</text>
+</svg>

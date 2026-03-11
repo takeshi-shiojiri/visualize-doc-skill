@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1000 1211.2"
+     width="1000" height="1211.2"
+     role="img" aria-labelledby="diagram-title diagram-desc"
+     style="font-family: 'Noto Sans CJK JP', 'Hiragino Sans', 'Yu Gothic', 'sans-serif';">
+  <title id="diagram-title">ユーザー登録フロー</title>
+  <desc id="diagram-desc">メール認証付き新規登録プロセス</desc>
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#D5D8DC" flood-opacity="0.4"/>
+    </filter>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10"
+            refX="8" refY="5" orient="auto-start-reverse">
+      <polygon points="0 0, 10 5, 0 10" fill="#636E72"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="1211.2" fill="#F5F7FA" rx="0"/>
+  <text x="500.0" y="76.8" text-anchor="middle" font-size="28px" font-weight="bold" fill="#2D3436" dominant-baseline="central">ユーザー登録フロー</text>
+  <text x="500.0" y="116.39999999999999" text-anchor="middle" font-size="18px"  fill="#636E72" dominant-baseline="central">メール認証付き新規登録プロセス</text>
+  <line x1="500.0" y1="231.2" x2="500.0" y2="295.2" stroke="#636E72" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="500.0" y1="375.2" x2="500.0" y2="439.2" stroke="#636E72" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M 602.3 469.2 L 602.3 511.2 Q 602.3 516.2 597.2 516.2 L 597.2 516.2 Q 592.2 516.2 592.2 521.2 L 592.2 563.2" fill="none" stroke="#636E72" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <rect x="577.2" y="496.2" width="40" height="16" rx="3" fill="#F5F7FA" opacity="0.9"/>
+  <text x="597.25" y="506.20000000000005" text-anchor="middle" font-size="12px"  fill="#95A5A6" dominant-baseline="central">OK</text>
+  <path d="M 397.7 469.2 L 397.7 516.7 Q 397.7 521.7 402.8 521.7 L 402.8 521.7 Q 407.8 521.7 407.8 526.8 L 407.8 574.2" fill="none" stroke="#636E72" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <rect x="382.8" y="501.7" width="40" height="16" rx="3" fill="#F5F7FA" opacity="0.9"/>
+  <text x="402.75" y="511.70000000000005" text-anchor="middle" font-size="12px"  fill="#95A5A6" dominant-baseline="central">NG</text>
+  <path d="M 592.2 665.2 L 592.2 689.2 Q 592.2 697.2 584.2 697.2 L 508.0 697.2 Q 500.0 697.2 500.0 705.2 L 500.0 729.2" fill="none" stroke="#636E72" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="500.0" y1="809.2" x2="500.0" y2="873.2" stroke="#636E72" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M 391.1 903.2 L 391.1 943.7 Q 391.1 950.2 397.6 950.2 L 397.6 950.2 Q 404.2 950.2 404.2 956.8 L 404.2 997.2" fill="none" stroke="#636E72" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <rect x="377.6" y="930.2" width="40" height="16" rx="3" fill="#F5F7FA" opacity="0.9"/>
+  <text x="397.65" y="940.2" text-anchor="middle" font-size="12px"  fill="#95A5A6" dominant-baseline="central">認証済</text>
+  <path d="M 608.9 903.2 L 608.9 942.2 Q 608.9 950.2 600.9 950.2 L 583.0 950.2 Q 575.0 950.2 575.0 958.2 L 575.0 997.2" fill="none" stroke="#636E72" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <rect x="572.0" y="930.2" width="40" height="16" rx="3" fill="#F5F7FA" opacity="0.9"/>
+  <text x="591.95" y="940.2" text-anchor="middle" font-size="12px"  fill="#95A5A6" dominant-baseline="central">期限切れ</text>
+  <path d="M 485.0 614.2 C 632.4 614.2 632.4 335.2 592.4 335.2" fill="none" stroke="#636E72" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arrowhead)"/>
+  <ellipse cx="500.0" cy="209.2" rx="60.0" ry="22.0" fill="#00B894" filter="url(#shadow)"/>
+  <text x="500.0" y="209.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#FFFFFF" dominant-baseline="central">開始</text>
+  <rect x="407.6" y="295.2" width="184.8" height="80" rx="8" fill="#EBF5FB" stroke="#74B9FF" stroke-width="2" filter="url(#shadow)"/>
+  <text x="500.0" y="319.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">メールアドレス入力</text>
+  <text x="500.0" y="348.2" text-anchor="middle" font-size="14px"  fill="#2D3436" dominant-baseline="central">形式チェック実行</text>
+  <polygon points="500.0,439.2 602.3,469.2 500.0,499.2 397.7,469.2" fill="#FEF9E7" stroke="#FDCB6E" stroke-width="2" filter="url(#shadow)"/>
+  <text x="500.0" y="469.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">バリデーション</text>
+  <rect x="330.6" y="574.2" width="154.39999999999998" height="80" rx="8" fill="#E8F8F5" stroke="#00B894" stroke-width="2" filter="url(#shadow)"/>
+  <text x="407.8" y="598.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">エラー表示</text>
+  <text x="407.8" y="627.2" text-anchor="middle" font-size="14px"  fill="#2D3436" dominant-baseline="central">入力値を修正依頼</text>
+  <rect x="515.0" y="563.2" width="154.4" height="102" rx="8" fill="#FEF9E7" stroke="#FDCB6E" stroke-width="2" filter="url(#shadow)"/>
+  <text x="592.2" y="587.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">パスワード設定</text>
+  <text x="592.2" y="616.2" text-anchor="middle" font-size="14px"  fill="#2D3436" dominant-baseline="central">8文字以上</text>
+  <text x="592.2" y="638.2" text-anchor="middle" font-size="14px"  fill="#2D3436" dominant-baseline="central">英数字記号混合</text>
+  <rect x="408.45" y="729.2" width="183.1" height="80" rx="8" fill="#FDEDEC" stroke="#FF7675" stroke-width="2" filter="url(#shadow)"/>
+  <text x="500.0" y="753.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">確認メール送信</text>
+  <text x="500.0" y="782.2" text-anchor="middle" font-size="14px"  fill="#2D3436" dominant-baseline="central">24時間有効なトークン</text>
+  <polygon points="500.0,873.2 608.9,903.2 500.0,933.2 391.1,903.2" fill="#FEF9E7" stroke="#FDCB6E" stroke-width="2" filter="url(#shadow)"/>
+  <text x="500.0" y="903.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">メール認証完了?</text>
+  <ellipse cx="404.2" cy="1019.2" rx="60.0" ry="22.0" fill="#FF7675" filter="url(#shadow)"/>
+  <text x="404.2" y="1019.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#FFFFFF" dominant-baseline="central">登録完了</text>
+  <ellipse cx="575.0" cy="1019.2" rx="80.8" ry="22.0" fill="#FF7675" filter="url(#shadow)"/>
+  <text x="575.0" y="1019.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#FFFFFF" dominant-baseline="central">トークン期限切れ</text>
+  <rect x="60" y="1101.2" width="880" height="50" rx="8" fill="#E8F8F5" stroke="#00B894" stroke-width="2"/>
+  <text x="500.0" y="1126.2" text-anchor="middle" font-size="14px"  fill="#2D3436" dominant-baseline="central">✦ 認証メールは最大3回まで再送可能</text>
+</svg>

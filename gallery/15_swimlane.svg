@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1100 633.2"
+     width="1100" height="633.2"
+     role="img" aria-labelledby="diagram-title diagram-desc"
+     style="font-family: 'Noto Sans CJK JP', 'Hiragino Sans', 'Yu Gothic', 'sans-serif';">
+  <title id="diagram-title">問い合わせ対応 スイムレーン図</title>
+  <desc id="diagram-desc">部門横断の業務フロー</desc>
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#D5D8DC" flood-opacity="0.4"/>
+    </filter>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10"
+            refX="8" refY="5" orient="auto-start-reverse">
+      <polygon points="0 0, 10 5, 0 10" fill="#636E72"/>
+    </marker>
+  </defs>
+  <rect width="1100" height="633.2" fill="#F5F7FA" rx="0"/>
+  <text x="550.0" y="76.8" text-anchor="middle" font-size="28px" font-weight="bold" fill="#2D3436" dominant-baseline="central">問い合わせ対応 スイムレーン図</text>
+  <text x="550.0" y="116.39999999999999" text-anchor="middle" font-size="18px"  fill="#636E72" dominant-baseline="central">部門横断の業務フロー</text>
+  <rect x="212.60000000000002" y="195.2" width="142.79999999999998" height="40" rx="20" fill="#74B9FF"/>
+  <text x="284.0" y="215.2" text-anchor="middle" font-size="20px" font-weight="bold" fill="#FFFFFF" dominant-baseline="central">受付</text>
+  <rect x="380.6" y="195.2" width="142.79999999999998" height="40" rx="20" fill="#00B894"/>
+  <text x="452.0" y="215.2" text-anchor="middle" font-size="20px" font-weight="bold" fill="#FFFFFF" dominant-baseline="central">一次対応</text>
+  <rect x="548.6" y="195.2" width="142.79999999999998" height="40" rx="20" fill="#FDCB6E"/>
+  <text x="620.0" y="215.2" text-anchor="middle" font-size="20px" font-weight="bold" fill="#FFFFFF" dominant-baseline="central">調査</text>
+  <rect x="692.0" y="195.2" width="192.0" height="40" rx="20" fill="#FF7675"/>
+  <text x="788.0" y="215.2" text-anchor="middle" font-size="20px" font-weight="bold" fill="#FFFFFF" dominant-baseline="central">エスカレーション</text>
+  <rect x="884.6" y="195.2" width="142.79999999999998" height="40" rx="20" fill="#A29BFE"/>
+  <text x="956.0" y="215.2" text-anchor="middle" font-size="20px" font-weight="bold" fill="#FFFFFF" dominant-baseline="central">解決・回答</text>
+  <rect x="60" y="243.2" width="980" height="55" rx="0" fill="#FFFFFF"/>
+  <line x1="60" y1="243.2" x2="1040" y2="243.2" stroke="#D5D8DC" stroke-width="1" stroke-dasharray="6,3"/>
+  <rect x="60" y="243.2" width="5" height="55" rx="0" fill="#74B9FF"/>
+  <text x="135.0" y="270.7" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">顧客</text>
+  <text x="220.0" y="270.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">問い合わせ送信</text>
+  <text x="388.0" y="270.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">自動返信受信</text>
+  <text x="556.0" y="270.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">追加情報提供</text>
+  <text x="724.0" y="270.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">—</text>
+  <text x="892.0" y="270.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">回答を確認</text>
+  <rect x="60" y="298.2" width="980" height="55" rx="0" fill="#FAFBFC"/>
+  <line x1="60" y1="298.2" x2="1040" y2="298.2" stroke="#D5D8DC" stroke-width="1" stroke-dasharray="6,3"/>
+  <rect x="60" y="298.2" width="5" height="55" rx="0" fill="#00B894"/>
+  <text x="135.0" y="325.7" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">CS部門</text>
+  <text x="220.0" y="325.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">チケット発行</text>
+  <text x="388.0" y="325.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">FAQ確認・初期回答</text>
+  <text x="556.0" y="325.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">担当者にヒアリング</text>
+  <text x="724.0" y="325.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">技術部門に依頼</text>
+  <text x="892.0" y="325.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">最終回答を送付</text>
+  <rect x="60" y="353.2" width="980" height="55" rx="0" fill="#FFFFFF"/>
+  <line x1="60" y1="353.2" x2="1040" y2="353.2" stroke="#D5D8DC" stroke-width="1" stroke-dasharray="6,3"/>
+  <rect x="60" y="353.2" width="5" height="55" rx="0" fill="#FDCB6E"/>
+  <text x="135.0" y="380.7" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">技術部門</text>
+  <text x="220.0" y="380.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">—</text>
+  <text x="388.0" y="380.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">—</text>
+  <text x="556.0" y="380.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">ログ調査</text>
+  <text x="724.0" y="380.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">原因特定・修正</text>
+  <text x="892.0" y="380.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">修正結果を報告</text>
+  <rect x="60" y="408.2" width="980" height="55" rx="0" fill="#FAFBFC"/>
+  <line x1="60" y1="408.2" x2="1040" y2="408.2" stroke="#D5D8DC" stroke-width="1" stroke-dasharray="6,3"/>
+  <rect x="60" y="408.2" width="5" height="55" rx="0" fill="#FF7675"/>
+  <text x="135.0" y="435.7" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">マネージャー</text>
+  <text x="220.0" y="435.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">—</text>
+  <text x="388.0" y="435.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">—</text>
+  <text x="556.0" y="435.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">—</text>
+  <text x="724.0" y="435.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">優先度判断</text>
+  <text x="892.0" y="435.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">品質レビュー</text>
+  <line x1="60" y1="463.2" x2="1040" y2="463.2" stroke="#D5D8DC" stroke-width="1" stroke-dasharray="6,3"/>
+  <line x1="368.0" y1="243.2" x2="368.0" y2="463.2" stroke="#D5D8DC" stroke-width="1" stroke-dasharray="4,4" opacity="0.5"/>
+  <line x1="536.0" y1="243.2" x2="536.0" y2="463.2" stroke="#D5D8DC" stroke-width="1" stroke-dasharray="4,4" opacity="0.5"/>
+  <line x1="704.0" y1="243.2" x2="704.0" y2="463.2" stroke="#D5D8DC" stroke-width="1" stroke-dasharray="4,4" opacity="0.5"/>
+  <line x1="872.0" y1="243.2" x2="872.0" y2="463.2" stroke="#D5D8DC" stroke-width="1" stroke-dasharray="4,4" opacity="0.5"/>
+  <rect x="60" y="523.2" width="980" height="50" rx="8" fill="#E8F8F5" stroke="#00B894" stroke-width="2"/>
+  <text x="550.0" y="548.2" text-anchor="middle" font-size="14px"  fill="#2D3436" dominant-baseline="central">✦ SLA: 一次回答24h以内、解決72h以内</text>
+</svg>

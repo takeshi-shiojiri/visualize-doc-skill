@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1233.8 709.2"
+     width="1233.8" height="709.2"
+     role="img" aria-labelledby="diagram-title diagram-desc"
+     style="font-family: 'Noto Sans CJK JP', 'Hiragino Sans', 'Yu Gothic', 'sans-serif';">
+  <title id="diagram-title">会社組織図</title>
+  <desc id="diagram-desc">株式会社サンプルテクノロジーズ</desc>
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#D5D8DC" flood-opacity="0.4"/>
+    </filter>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10"
+            refX="8" refY="5" orient="auto-start-reverse">
+      <polygon points="0 0, 10 5, 0 10" fill="#636E72"/>
+    </marker>
+  </defs>
+  <rect width="1233.8" height="709.2" fill="#F5F7FA" rx="0"/>
+  <text x="616.9" y="76.8" text-anchor="middle" font-size="28px" font-weight="bold" fill="#2D3436" dominant-baseline="central">会社組織図</text>
+  <text x="616.9" y="116.39999999999999" text-anchor="middle" font-size="18px"  fill="#636E72" dominant-baseline="central">株式会社サンプルテクノロジーズ</text>
+  <path d="M 616.9 267.2 L 616.9 287.2 Q 616.9 295.2 608.9 295.2 L 240.0 295.2 Q 232.0 295.2 232.0 303.2 L 232.0 323.2" fill="none" stroke="#74B9FF" stroke-width="2" opacity="0.5"/>
+  <path d="M 232.0 403.2 L 232.0 423.2 Q 232.0 431.2 224.0 431.2 L 160.4 431.2 Q 152.4 431.2 152.4 439.2 L 152.4 459.2" fill="none" stroke="#74B9FF" stroke-width="2" opacity="0.5"/>
+  <path d="M 232.0 403.2 L 232.0 423.2 Q 232.0 431.2 240.0 431.2 L 326.4 431.2 Q 334.4 431.2 334.4 439.2 L 334.4 459.2" fill="none" stroke="#74B9FF" stroke-width="2" opacity="0.5"/>
+  <path d="M 616.9 267.2 L 616.9 287.2 Q 616.9 295.2 608.9 295.2 L 564.2 295.2 Q 556.2 295.2 556.2 303.2 L 556.2 323.2" fill="none" stroke="#00B894" stroke-width="2" opacity="0.5"/>
+  <path d="M 556.2 403.2 L 556.2 423.2 Q 556.2 431.2 548.2 431.2 L 489.2 431.2 Q 481.2 431.2 481.2 439.2 L 481.2 459.2" fill="none" stroke="#00B894" stroke-width="2" opacity="0.5"/>
+  <path d="M 556.2 403.2 L 556.2 423.2 Q 556.2 431.2 564.2 431.2 L 615.5 431.2 Q 623.5 431.2 623.5 439.2 L 623.5 459.2" fill="none" stroke="#00B894" stroke-width="2" opacity="0.5"/>
+  <path d="M 616.9 267.2 L 616.9 287.2 Q 616.9 295.2 624.9 295.2 L 933.1 295.2 Q 941.1 295.2 941.1 303.2 L 941.1 323.2" fill="none" stroke="#FDCB6E" stroke-width="2" opacity="0.5"/>
+  <path d="M 941.1 403.2 L 941.1 423.2 Q 941.1 431.2 933.1 431.2 L 774.7 431.2 Q 766.7 431.2 766.7 439.2 L 766.7 459.2" fill="none" stroke="#FDCB6E" stroke-width="2" opacity="0.5"/>
+  <path d="M 941.1 403.2 L 941.1 425.1 Q 941.1 431.2 935.0 431.2 L 935.0 431.2 Q 928.8 431.2 928.8 437.3 L 928.8 459.2" fill="none" stroke="#FDCB6E" stroke-width="2" opacity="0.5"/>
+  <path d="M 941.1 403.2 L 941.1 423.2 Q 941.1 431.2 949.1 431.2 L 1095.2 431.2 Q 1103.2 431.2 1103.2 439.2 L 1103.2 459.2" fill="none" stroke="#FDCB6E" stroke-width="2" opacity="0.5"/>
+  <rect x="546.35" y="187.2" width="141.1" height="80" rx="8" fill="#2D3436" filter="url(#shadow)"/>
+  <text x="616.9" y="211.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#FFFFFF" dominant-baseline="central">CEO</text>
+  <text x="616.9" y="240.2" text-anchor="middle" font-size="14px" fill="#FFFFFF" dominant-baseline="central">代表取締役社長</text>
+  <rect x="181.4" y="323.2" width="101.19999999999999" height="80" rx="8" fill="#EBF5FB" stroke="#74B9FF" stroke-width="2" filter="url(#shadow)"/>
+  <text x="232.0" y="347.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">CTO</text>
+  <text x="232.0" y="376.2" text-anchor="middle" font-size="14px"  fill="#2D3436" dominant-baseline="central">技術統括</text>
+  <rect x="60.0" y="459.2" width="184.8" height="80" rx="8" fill="#EBF5FB" stroke="#74B9FF" stroke-width="2" filter="url(#shadow)"/>
+  <text x="152.4" y="483.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">エンジニアリング部</text>
+  <text x="152.4" y="512.2" text-anchor="middle" font-size="14px"  fill="#2D3436" dominant-baseline="central">開発チーム×3</text>
+  <rect x="264.79999999999995" y="459.2" width="139.2" height="80" rx="8" fill="#EBF5FB" stroke="#74B9FF" stroke-width="2" filter="url(#shadow)"/>
+  <text x="334.4" y="483.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">プロダクト部</text>
+  <text x="334.4" y="512.2" text-anchor="middle" font-size="14px"  fill="#2D3436" dominant-baseline="central">PdM・デザイン</text>
+  <rect x="505.6" y="323.2" width="101.19999999999999" height="80" rx="8" fill="#E8F8F5" stroke="#00B894" stroke-width="2" filter="url(#shadow)"/>
+  <text x="556.2" y="347.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">CFO</text>
+  <text x="556.2" y="376.2" text-anchor="middle" font-size="14px"  fill="#2D3436" dominant-baseline="central">財務統括</text>
+  <rect x="424.0" y="459.2" width="114.5" height="80" rx="8" fill="#E8F8F5" stroke="#00B894" stroke-width="2" filter="url(#shadow)"/>
+  <text x="481.25" y="483.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">経理部</text>
+  <text x="481.25" y="512.2" text-anchor="middle" font-size="14px"  fill="#2D3436" dominant-baseline="central">決算・税務</text>
+  <rect x="558.5" y="459.2" width="129.9" height="80" rx="8" fill="#E8F8F5" stroke="#00B894" stroke-width="2" filter="url(#shadow)"/>
+  <text x="623.45" y="483.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">財務部</text>
+  <text x="623.45" y="512.2" text-anchor="middle" font-size="14px"  fill="#2D3436" dominant-baseline="central">資金調達・IR</text>
+  <rect x="890.4999999999999" y="323.2" width="101.19999999999999" height="80" rx="8" fill="#FEF9E7" stroke="#FDCB6E" stroke-width="2" filter="url(#shadow)"/>
+  <text x="941.0999999999999" y="347.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">COO</text>
+  <text x="941.0999999999999" y="376.2" text-anchor="middle" font-size="14px"  fill="#2D3436" dominant-baseline="central">事業統括</text>
+  <rect x="708.3999999999999" y="459.2" width="116.6" height="80" rx="8" fill="#FEF9E7" stroke="#FDCB6E" stroke-width="2" filter="url(#shadow)"/>
+  <text x="766.6999999999998" y="483.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">営業部</text>
+  <text x="766.6999999999998" y="512.2" text-anchor="middle" font-size="14px"  fill="#2D3436" dominant-baseline="central">法人営業×2</text>
+  <rect x="844.9999999999999" y="459.2" width="167.7" height="80" rx="8" fill="#FEF9E7" stroke="#FDCB6E" stroke-width="2" filter="url(#shadow)"/>
+  <text x="928.8499999999999" y="483.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">CS部</text>
+  <text x="928.8499999999999" y="512.2" text-anchor="middle" font-size="14px"  fill="#2D3436" dominant-baseline="central">カスタマーサクセス</text>
+  <rect x="1032.6999999999998" y="459.2" width="141.1" height="80" rx="8" fill="#FEF9E7" stroke="#FDCB6E" stroke-width="2" filter="url(#shadow)"/>
+  <text x="1103.2499999999998" y="483.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">マーケ部</text>
+  <text x="1103.2499999999998" y="512.2" text-anchor="middle" font-size="14px"  fill="#2D3436" dominant-baseline="central">デジタルマーケ</text>
+  <rect x="60" y="599.2" width="1113.8" height="50" rx="8" fill="#E8F8F5" stroke="#00B894" stroke-width="2"/>
+  <text x="616.9" y="624.2" text-anchor="middle" font-size="14px"  fill="#2D3436" dominant-baseline="central">✦ 2026年4月時点の組織体制（従業員数: 120名）</text>
+</svg>

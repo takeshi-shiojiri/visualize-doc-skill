@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1120.0 609.2"
+     width="1120.0" height="609.2"
+     role="img" aria-labelledby="diagram-title diagram-desc"
+     style="font-family: 'Noto Sans CJK JP', 'Hiragino Sans', 'Yu Gothic', 'sans-serif';">
+  <title id="diagram-title">ペルソナ → 課題 → 提供価値</title>
+  <desc id="diagram-desc">誰の何をどう解くかの対応関係</desc>
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#D5D8DC" flood-opacity="0.4"/>
+    </filter>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10"
+            refX="8" refY="5" orient="auto-start-reverse">
+      <polygon points="0 0, 10 5, 0 10" fill="#636E72"/>
+    </marker>
+  </defs>
+  <rect width="1120.0" height="609.2" fill="#F5F7FA" rx="0"/>
+  <text x="560.0" y="76.8" text-anchor="middle" font-size="28px" font-weight="bold" fill="#2D3436" dominant-baseline="central">ペルソナ → 課題 → 提供価値</text>
+  <text x="560.0" y="116.39999999999999" text-anchor="middle" font-size="18px"  fill="#636E72" dominant-baseline="central">誰の何をどう解くかの対応関係</text>
+  <path d="M 214.4 313.2 L 234.4 313.2 Q 242.4 313.2 242.4 305.2 L 242.4 253.2 Q 242.4 245.2 250.4 245.2 L 270.4 245.2" fill="none" stroke="#74B9FF" stroke-width="2" opacity="0.5"/>
+  <path d="M 490.4 245.2 L 510.4 245.2 Q 518.4 245.2 518.4 237.2 L 518.4 219.2 Q 518.4 211.2 526.4 211.2 L 546.4 211.2" fill="none" stroke="#74B9FF" stroke-width="2" opacity="0.5"/>
+  <line x1="764.0" y1="211.2" x2="826.4" y2="211.2" stroke="#74B9FF" stroke-width="2" opacity="0.5"/>
+  <path d="M 490.4 245.2 L 518.0 245.2 Q 526.0 245.2 526.0 253.2 L 526.0 271.2 Q 526.0 279.2 534.0 279.2 L 561.6 279.2" fill="none" stroke="#74B9FF" stroke-width="2" opacity="0.5"/>
+  <line x1="748.8" y1="279.2" x2="821.2" y2="279.2" stroke="#74B9FF" stroke-width="2" opacity="0.5"/>
+  <path d="M 214.4 313.2 L 242.6 313.2 Q 250.6 313.2 250.6 321.2 L 250.6 373.2 Q 250.6 381.2 258.6 381.2 L 286.8 381.2" fill="none" stroke="#00B894" stroke-width="2" opacity="0.5"/>
+  <path d="M 474.0 381.2 L 502.2 381.2 Q 510.2 381.2 510.2 373.2 L 510.2 355.2 Q 510.2 347.2 518.2 347.2 L 546.4 347.2" fill="none" stroke="#00B894" stroke-width="2" opacity="0.5"/>
+  <line x1="764.0" y1="347.2" x2="820.0" y2="347.2" stroke="#00B894" stroke-width="2" opacity="0.5"/>
+  <path d="M 474.0 381.2 L 509.8 381.2 Q 517.8 381.2 517.8 389.2 L 517.8 407.2 Q 517.8 415.2 525.8 415.2 L 561.6 415.2" fill="none" stroke="#00B894" stroke-width="2" opacity="0.5"/>
+  <line x1="748.8" y1="415.2" x2="823.6" y2="415.2" stroke="#00B894" stroke-width="2" opacity="0.5"/>
+  <rect x="59.999999999999986" y="289.2" width="154.4" height="48" rx="8" fill="#2D3436" filter="url(#shadow)"/>
+  <text x="137.2" y="313.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#FFFFFF" dominant-baseline="central">ターゲット設計</text>
+  <rect x="270.4" y="221.2" width="220.0" height="48" rx="8" fill="#EBF5FB" stroke="#74B9FF" stroke-width="2" filter="url(#shadow)"/>
+  <text x="380.4" y="245.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">EC店舗オーナー（30代）</text>
+  <rect x="546.4" y="187.2" width="217.6" height="48" rx="8" fill="#EBF5FB" stroke="#74B9FF" stroke-width="2" filter="url(#shadow)"/>
+  <text x="655.1999999999999" y="211.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">課題: リピート率が低い</text>
+  <rect x="826.4000000000001" y="187.2" width="227.19999999999993" height="48" rx="8" fill="#EBF5FB" stroke="#74B9FF" stroke-width="2" filter="url(#shadow)"/>
+  <text x="940.0" y="211.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">価値: LINE CRM自動配信</text>
+  <rect x="561.5999999999999" y="255.2" width="187.20000000000002" height="48" rx="8" fill="#EBF5FB" stroke="#74B9FF" stroke-width="2" filter="url(#shadow)"/>
+  <text x="655.1999999999999" y="279.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">課題: 広告費が高い</text>
+  <rect x="821.2" y="255.2" width="237.59999999999994" height="48" rx="8" fill="#EBF5FB" stroke="#74B9FF" stroke-width="2" filter="url(#shadow)"/>
+  <text x="940.0" y="279.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">価値: SEO+コンテンツ集客</text>
+  <rect x="286.79999999999995" y="357.2" width="187.2" height="48" rx="8" fill="#E8F8F5" stroke="#00B894" stroke-width="2" filter="url(#shadow)"/>
+  <text x="380.4" y="381.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">マーケ担当（20代）</text>
+  <rect x="546.4" y="323.2" width="217.6" height="48" rx="8" fill="#E8F8F5" stroke="#00B894" stroke-width="2" filter="url(#shadow)"/>
+  <text x="655.1999999999999" y="347.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">課題: 施策の効果が不明</text>
+  <rect x="820.0" y="323.2" width="240" height="48" rx="8" fill="#E8F8F5" stroke="#00B894" stroke-width="2" filter="url(#shadow)"/>
+  <text x="940.0" y="347.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">価値: ダッシュボード可視化</text>
+  <rect x="561.5999999999999" y="391.2" width="187.20000000000002" height="48" rx="8" fill="#E8F8F5" stroke="#00B894" stroke-width="2" filter="url(#shadow)"/>
+  <text x="655.1999999999999" y="415.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">課題: 作業が属人的</text>
+  <rect x="823.6" y="391.2" width="232.79999999999998" height="48" rx="8" fill="#E8F8F5" stroke="#00B894" stroke-width="2" filter="url(#shadow)"/>
+  <text x="940.0" y="415.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">価値: ワークフロー自動化</text>
+  <rect x="60" y="499.20000000000005" width="1000.0" height="50" rx="8" fill="#E8F8F5" stroke="#00B894" stroke-width="2"/>
+  <text x="560.0" y="524.2" text-anchor="middle" font-size="14px"  fill="#2D3436" dominant-baseline="central">✦ ペルソナごとの課題に1:1で価値提案を対応させる</text>
+</svg>

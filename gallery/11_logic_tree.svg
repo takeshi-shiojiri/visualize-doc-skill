@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1000 959.2"
+     width="1000" height="959.2"
+     role="img" aria-labelledby="diagram-title diagram-desc"
+     style="font-family: 'Noto Sans CJK JP', 'Hiragino Sans', 'Yu Gothic', 'sans-serif';">
+  <title id="diagram-title">売上低下の原因分析（ロジックツリー）</title>
+  <desc id="diagram-desc">Why型で根本原因を構造的に分解</desc>
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#D5D8DC" flood-opacity="0.4"/>
+    </filter>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10"
+            refX="8" refY="5" orient="auto-start-reverse">
+      <polygon points="0 0, 10 5, 0 10" fill="#636E72"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="959.2" fill="#F5F7FA" rx="0"/>
+  <text x="500.0" y="76.8" text-anchor="middle" font-size="28px" font-weight="bold" fill="#2D3436" dominant-baseline="central">売上低下の原因分析（ロジックツリー）</text>
+  <text x="500.0" y="116.39999999999999" text-anchor="middle" font-size="18px"  fill="#636E72" dominant-baseline="central">Why型で根本原因を構造的に分解</text>
+  <path d="M 366.8 488.2 L 386.8 488.2 Q 394.8 488.2 394.8 480.2 L 394.8 296.2 Q 394.8 288.2 402.8 288.2 L 422.8 288.2" fill="none" stroke="#74B9FF" stroke-width="2" opacity="0.5"/>
+  <path d="M 577.2 288.2 L 604.8 288.2 Q 612.8 288.2 612.8 280.2 L 612.8 246.2 Q 612.8 238.2 620.8 238.2 L 648.4 238.2" fill="none" stroke="#74B9FF" stroke-width="2" opacity="0.5"/>
+  <path d="M 577.2 288.2 L 597.2 288.2 Q 605.2 288.2 605.2 296.2 L 605.2 341.2 Q 605.2 349.2 613.2 349.2 L 633.2 349.2" fill="none" stroke="#74B9FF" stroke-width="2" opacity="0.5"/>
+  <path d="M 366.8 488.2 L 389.3 488.2 Q 394.8 488.2 394.8 493.7 L 394.8 493.7 Q 394.8 499.2 400.3 499.2 L 422.8 499.2" fill="none" stroke="#00B894" stroke-width="2" opacity="0.5"/>
+  <path d="M 577.2 499.2 L 608.1 499.2 Q 616.1 499.2 616.1 491.2 L 616.1 457.2 Q 616.1 449.2 624.1 449.2 L 655.1 449.2" fill="none" stroke="#00B894" stroke-width="2" opacity="0.5"/>
+  <path d="M 577.2 499.2 L 601.0 499.2 Q 609.0 499.2 609.0 507.2 L 609.0 541.2 Q 609.0 549.2 617.0 549.2 L 640.8 549.2" fill="none" stroke="#00B894" stroke-width="2" opacity="0.5"/>
+  <path d="M 366.8 488.2 L 390.6 488.2 Q 398.6 488.2 398.6 496.2 L 398.6 691.2 Q 398.6 699.2 406.6 699.2 L 430.4 699.2" fill="none" stroke="#FDCB6E" stroke-width="2" opacity="0.5"/>
+  <path d="M 569.6 699.2 L 601.0 699.2 Q 609.0 699.2 609.0 691.2 L 609.0 657.2 Q 609.0 649.2 617.0 649.2 L 648.4 649.2" fill="none" stroke="#FDCB6E" stroke-width="2" opacity="0.5"/>
+  <path d="M 569.6 699.2 L 598.5 699.2 Q 606.5 699.2 606.5 707.2 L 606.5 741.2 Q 606.5 749.2 614.5 749.2 L 643.5 749.2" fill="none" stroke="#FDCB6E" stroke-width="2" opacity="0.5"/>
+  <rect x="181.99999999999997" y="464.2" width="184.8" height="48" rx="8" fill="#2D3436" filter="url(#shadow)"/>
+  <text x="274.4" y="488.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#FFFFFF" dominant-baseline="central">売上が低下している</text>
+  <rect x="422.8" y="264.2" width="154.4" height="48" rx="8" fill="#EBF5FB" stroke="#74B9FF" stroke-width="2" filter="url(#shadow)"/>
+  <text x="500.0" y="288.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">新規獲得の減少</text>
+  <rect x="648.4" y="187.2" width="154.4" height="102" rx="8" fill="#EBF5FB" stroke="#74B9FF" stroke-width="2" filter="url(#shadow)"/>
+  <text x="725.6" y="211.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">広告効率の悪化</text>
+  <text x="725.6" y="240.2" text-anchor="middle" font-size="14px"  fill="#2D3436" dominant-baseline="central">CPA上昇</text>
+  <text x="725.6" y="262.2" text-anchor="middle" font-size="14px"  fill="#2D3436" dominant-baseline="central">CTR低下</text>
+  <rect x="633.2" y="309.2" width="184.8" height="80" rx="8" fill="#EBF5FB" stroke="#74B9FF" stroke-width="2" filter="url(#shadow)"/>
+  <text x="725.6" y="333.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">認知チャネルの減少</text>
+  <text x="725.6" y="362.2" text-anchor="middle" font-size="14px"  fill="#2D3436" dominant-baseline="central">SNS流入-30%</text>
+  <rect x="422.8" y="475.2" width="154.4" height="48" rx="8" fill="#E8F8F5" stroke="#00B894" stroke-width="2" filter="url(#shadow)"/>
+  <text x="500.0" y="499.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">既存顧客の離脱</text>
+  <rect x="655.0500000000001" y="409.2" width="141.1" height="80" rx="8" fill="#E8F8F5" stroke="#00B894" stroke-width="2" filter="url(#shadow)"/>
+  <text x="725.6" y="433.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">競合への流出</text>
+  <text x="725.6" y="462.2" text-anchor="middle" font-size="14px"  fill="#2D3436" dominant-baseline="central">価格競争力低下</text>
+  <rect x="640.8" y="509.20000000000005" width="169.60000000000002" height="80" rx="8" fill="#E8F8F5" stroke="#00B894" stroke-width="2" filter="url(#shadow)"/>
+  <text x="725.6" y="533.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">サービス品質低下</text>
+  <text x="725.6" y="562.2" text-anchor="middle" font-size="14px"  fill="#2D3436" dominant-baseline="central">NPS -15pt</text>
+  <rect x="430.4" y="675.2" width="139.2" height="48" rx="8" fill="#FEF9E7" stroke="#FDCB6E" stroke-width="2" filter="url(#shadow)"/>
+  <text x="500.0" y="699.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">客単価の低下</text>
+  <rect x="648.4" y="609.2" width="154.4" height="80" rx="8" fill="#FEF9E7" stroke="#FDCB6E" stroke-width="2" filter="url(#shadow)"/>
+  <text x="725.6" y="633.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">アップセル不足</text>
+  <text x="725.6" y="662.2" text-anchor="middle" font-size="14px"  fill="#2D3436" dominant-baseline="central">提案率20%→8%</text>
+  <rect x="643.5" y="709.2" width="164.2" height="80" rx="8" fill="#FEF9E7" stroke="#FDCB6E" stroke-width="2" filter="url(#shadow)"/>
+  <text x="725.6" y="733.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">値引き依存</text>
+  <text x="725.6" y="762.2" text-anchor="middle" font-size="14px"  fill="#2D3436" dominant-baseline="central">クーポン使用率70%</text>
+  <rect x="60" y="849.2" width="880" height="50" rx="8" fill="#E8F8F5" stroke="#00B894" stroke-width="2"/>
+  <text x="500.0" y="874.2" text-anchor="middle" font-size="14px"  fill="#2D3436" dominant-baseline="central">✦ 各末端原因に対して打ち手を設計する</text>
+</svg>

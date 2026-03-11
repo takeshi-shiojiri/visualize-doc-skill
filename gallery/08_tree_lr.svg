@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1000 993.2"
+     width="1000" height="993.2"
+     role="img" aria-labelledby="diagram-title diagram-desc"
+     style="font-family: 'Noto Sans CJK JP', 'Hiragino Sans', 'Yu Gothic', 'sans-serif';">
+  <title id="diagram-title">マーケティング戦略 マインドマップ</title>
+  <desc id="diagram-desc">2026年度ブランド戦略の全体像</desc>
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#D5D8DC" flood-opacity="0.4"/>
+    </filter>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10"
+            refX="8" refY="5" orient="auto-start-reverse">
+      <polygon points="0 0, 10 5, 0 10" fill="#636E72"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="993.2" fill="#F5F7FA" rx="0"/>
+  <text x="500.0" y="76.8" text-anchor="middle" font-size="28px" font-weight="bold" fill="#2D3436" dominant-baseline="central">マーケティング戦略 マインドマップ</text>
+  <text x="500.0" y="116.39999999999999" text-anchor="middle" font-size="18px"  fill="#636E72" dominant-baseline="central">2026年度ブランド戦略の全体像</text>
+  <path d="M 374.4 560.2 L 398.2 560.2 Q 406.2 560.2 406.2 552.2 L 406.2 368.2 Q 406.2 360.2 414.2 360.2 L 438.0 360.2" fill="none" stroke="#74B9FF" stroke-width="2" opacity="0.5"/>
+  <path d="M 546.8 360.2 L 574.8 360.2 Q 582.8 360.2 582.8 352.2 L 582.8 246.2 Q 582.8 238.2 590.8 238.2 L 618.8 238.2" fill="none" stroke="#74B9FF" stroke-width="2" opacity="0.5"/>
+  <line x1="546.8" y1="360.2" x2="625.1" y2="360.2" stroke="#74B9FF" stroke-width="2" opacity="0.5"/>
+  <path d="M 546.8 360.2 L 577.2 360.2 Q 585.2 360.2 585.2 368.2 L 585.2 474.2 Q 585.2 482.2 593.2 482.2 L 623.7 482.2" fill="none" stroke="#74B9FF" stroke-width="2" opacity="0.5"/>
+  <path d="M 374.4 560.2 L 394.4 560.2 Q 402.4 560.2 402.4 568.2 L 402.4 635.2 Q 402.4 643.2 410.4 643.2 L 430.4 643.2" fill="none" stroke="#00B894" stroke-width="2" opacity="0.5"/>
+  <path d="M 554.4 643.2 L 585.8 643.2 Q 593.8 643.2 593.8 635.2 L 593.8 601.2 Q 593.8 593.2 601.8 593.2 L 633.1 593.2" fill="none" stroke="#00B894" stroke-width="2" opacity="0.5"/>
+  <path d="M 554.4 643.2 L 581.9 643.2 Q 589.9 643.2 589.9 651.2 L 589.9 685.2 Q 589.9 693.2 597.9 693.2 L 625.4 693.2" fill="none" stroke="#00B894" stroke-width="2" opacity="0.5"/>
+  <path d="M 374.4 560.2 L 400.4 560.2 Q 408.4 560.2 408.4 568.2 L 408.4 835.2 Q 408.4 843.2 416.4 843.2 L 442.4 843.2" fill="none" stroke="#FDCB6E" stroke-width="2" opacity="0.5"/>
+  <path d="M 542.4 843.2 L 568.4 843.2 Q 576.4 843.2 576.4 835.2 L 576.4 801.2 Q 576.4 793.2 584.4 793.2 L 610.4 793.2" fill="none" stroke="#FDCB6E" stroke-width="2" opacity="0.5"/>
+  <path d="M 542.4 843.2 L 569.3 843.2 Q 577.3 843.2 577.3 851.2 L 577.3 885.2 Q 577.3 893.2 585.3 893.2 L 612.1 893.2" fill="none" stroke="#FDCB6E" stroke-width="2" opacity="0.5"/>
+  <rect x="235.19999999999996" y="536.2" width="139.2" height="48" rx="8" fill="#2D3436" filter="url(#shadow)"/>
+  <text x="304.8" y="560.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#FFFFFF" dominant-baseline="central">ブランド戦略</text>
+  <rect x="438.0" y="336.2" width="108.8" height="48" rx="8" fill="#EBF5FB" stroke="#74B9FF" stroke-width="2" filter="url(#shadow)"/>
+  <text x="492.4" y="360.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">デジタル</text>
+  <rect x="618.8" y="187.2" width="137.60000000000002" height="102" rx="8" fill="#EBF5FB" stroke="#74B9FF" stroke-width="2" filter="url(#shadow)"/>
+  <text x="687.5999999999999" y="211.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">SEO</text>
+  <text x="687.5999999999999" y="240.2" text-anchor="middle" font-size="14px"  fill="#2D3436" dominant-baseline="central">コンテンツSEO</text>
+  <text x="687.5999999999999" y="262.2" text-anchor="middle" font-size="14px"  fill="#2D3436" dominant-baseline="central">テクニカルSEO</text>
+  <rect x="625.0999999999999" y="309.2" width="125.00000000000001" height="102" rx="8" fill="#EBF5FB" stroke="#74B9FF" stroke-width="2" filter="url(#shadow)"/>
+  <text x="687.5999999999999" y="333.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">SNS</text>
+  <text x="687.5999999999999" y="362.2" text-anchor="middle" font-size="14px"  fill="#2D3436" dominant-baseline="central">Instagram</text>
+  <text x="687.5999999999999" y="384.2" text-anchor="middle" font-size="14px"  fill="#2D3436" dominant-baseline="central">X(Twitter)</text>
+  <rect x="623.6999999999999" y="431.2" width="127.8" height="102" rx="8" fill="#EBF5FB" stroke="#74B9FF" stroke-width="2" filter="url(#shadow)"/>
+  <text x="687.5999999999999" y="455.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">広告</text>
+  <text x="687.5999999999999" y="484.2" text-anchor="middle" font-size="14px"  fill="#2D3436" dominant-baseline="central">リスティング</text>
+  <text x="687.5999999999999" y="506.2" text-anchor="middle" font-size="14px"  fill="#2D3436" dominant-baseline="central">ディスプレイ</text>
+  <rect x="430.4" y="619.2" width="124.0" height="48" rx="8" fill="#E8F8F5" stroke="#00B894" stroke-width="2" filter="url(#shadow)"/>
+  <text x="492.4" y="643.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">オフライン</text>
+  <rect x="633.1499999999999" y="553.2" width="108.89999999999999" height="80" rx="8" fill="#E8F8F5" stroke="#00B894" stroke-width="2" filter="url(#shadow)"/>
+  <text x="687.5999999999999" y="577.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">展示会</text>
+  <text x="687.5999999999999" y="606.2" text-anchor="middle" font-size="14px"  fill="#2D3436" dominant-baseline="central">年2回出展</text>
+  <rect x="625.4499999999999" y="653.2" width="124.3" height="80" rx="8" fill="#E8F8F5" stroke="#00B894" stroke-width="2" filter="url(#shadow)"/>
+  <text x="687.5999999999999" y="677.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">DM</text>
+  <text x="687.5999999999999" y="706.2" text-anchor="middle" font-size="14px"  fill="#2D3436" dominant-baseline="central">VIP顧客向け</text>
+  <rect x="442.4" y="819.2" width="100" height="48" rx="8" fill="#FEF9E7" stroke="#FDCB6E" stroke-width="2" filter="url(#shadow)"/>
+  <text x="492.4" y="843.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">PR</text>
+  <rect x="610.3999999999999" y="753.2" width="154.4" height="80" rx="8" fill="#FEF9E7" stroke="#FDCB6E" stroke-width="2" filter="url(#shadow)"/>
+  <text x="687.5999999999999" y="777.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">プレスリリース</text>
+  <text x="687.5999999999999" y="806.2" text-anchor="middle" font-size="14px"  fill="#2D3436" dominant-baseline="central">月1回配信</text>
+  <rect x="612.1499999999999" y="853.2" width="150.89999999999998" height="80" rx="8" fill="#FEF9E7" stroke="#FDCB6E" stroke-width="2" filter="url(#shadow)"/>
+  <text x="687.5999999999999" y="877.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">メディア露出</text>
+  <text x="687.5999999999999" y="906.2" text-anchor="middle" font-size="14px"  fill="#2D3436" dominant-baseline="central">業界誌・Web媒体</text>
+</svg>

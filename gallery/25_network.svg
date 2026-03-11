@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 900 650"
+     width="900" height="650"
+     role="img" aria-labelledby="diagram-title diagram-desc"
+     style="font-family: 'Noto Sans CJK JP', 'Hiragino Sans', 'Yu Gothic', 'sans-serif';">
+  <title id="diagram-title">ネットワーク図</title>
+  <desc id="diagram-desc">システム間の接続関係</desc>
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#D5D8DC" flood-opacity="0.4"/>
+    </filter>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10"
+            refX="8" refY="5" orient="auto-start-reverse">
+      <polygon points="0 0, 10 5, 0 10" fill="#636E72"/>
+    </marker>
+  </defs>
+  <rect width="900" height="650" fill="#F5F7FA" rx="0"/>
+  <text x="450.0" y="45" text-anchor="middle" font-size="28px" font-weight="bold" fill="#2D3436" dominant-baseline="central">社内システム ネットワーク図</text>
+  <text x="450.0" y="72" text-anchor="middle" font-size="18px"  fill="#636E72" dominant-baseline="central">多対多のシステム間接続を可視化</text>
+  <line x1="450" y1="180" x2="200" y2="250" stroke="#D5D8DC" stroke-width="2"/>
+  <line x1="450" y1="180" x2="700" y2="250" stroke="#D5D8DC" stroke-width="2"/>
+  <line x1="450" y1="180" x2="350" y2="420" stroke="#D5D8DC" stroke-width="2"/>
+  <line x1="200" y1="250" x2="150" y2="420" stroke="#D5D8DC" stroke-width="2"/>
+  <line x1="200" y1="250" x2="350" y2="420" stroke="#D5D8DC" stroke-width="2"/>
+  <line x1="700" y1="250" x2="550" y2="420" stroke="#D5D8DC" stroke-width="2"/>
+  <line x1="700" y1="250" x2="750" y2="420" stroke="#D5D8DC" stroke-width="2"/>
+  <line x1="350" y1="420" x2="300" y2="550" stroke="#D5D8DC" stroke-width="2"/>
+  <line x1="550" y1="420" x2="600" y2="550" stroke="#D5D8DC" stroke-width="2"/>
+  <line x1="150" y1="420" x2="350" y2="420" stroke="#D5D8DC" stroke-width="2"/>
+  <line x1="700" y1="250" x2="350" y2="420" stroke="#D5D8DC" stroke-width="2"/>
+  <line x1="750" y1="420" x2="700" y2="250" stroke="#D5D8DC" stroke-width="2"/>
+  <circle cx="450" cy="180" r="42" fill="#FFFFFF" stroke="#74B9FF" stroke-width="3" filter="url(#shadow)"/>
+  <text x="450" y="180" text-anchor="middle" dominant-baseline="central" font-size="13px" font-weight="bold" fill="#2D3436">ERP</text>
+  <circle cx="200" cy="250" r="38" fill="#FFFFFF" stroke="#00B894" stroke-width="3" filter="url(#shadow)"/>
+  <text x="200" y="250" text-anchor="middle" dominant-baseline="central" font-size="13px" font-weight="bold" fill="#2D3436">CRM</text>
+  <circle cx="700" cy="250" r="38" fill="#FFFFFF" stroke="#FF7675" stroke-width="3" filter="url(#shadow)"/>
+  <text x="700" y="250" text-anchor="middle" dominant-baseline="central" font-size="13px" font-weight="bold" fill="#2D3436">EC基盤</text>
+  <circle cx="150" cy="420" r="34" fill="#FFFFFF" stroke="#A29BFE" stroke-width="3" filter="url(#shadow)"/>
+  <text x="150" y="420" text-anchor="middle" dominant-baseline="central" font-size="13px" font-weight="bold" fill="#2D3436">MA</text>
+  <circle cx="350" cy="420" r="36" fill="#FFFFFF" stroke="#FDCB6E" stroke-width="3" filter="url(#shadow)"/>
+  <text x="350" y="420" text-anchor="middle" dominant-baseline="central" font-size="13px" font-weight="bold" fill="#2D3436">DWH</text>
+  <circle cx="550" cy="420" r="34" fill="#FFFFFF" stroke="#FD79A8" stroke-width="3" filter="url(#shadow)"/>
+  <text x="550" y="420" text-anchor="middle" dominant-baseline="central" font-size="13px" font-weight="bold" fill="#2D3436">WMS</text>
+  <circle cx="750" cy="420" r="34" fill="#FFFFFF" stroke="#FF7675" stroke-width="3" filter="url(#shadow)"/>
+  <text x="750" y="420" text-anchor="middle" dominant-baseline="central" font-size="13px" font-weight="bold" fill="#2D3436">決済GW</text>
+  <circle cx="300" cy="550" r="30" fill="#FFFFFF" stroke="#74B9FF" stroke-width="3" filter="url(#shadow)"/>
+  <text x="300" y="550" text-anchor="middle" dominant-baseline="central" font-size="13px" font-weight="bold" fill="#2D3436">BI</text>
+  <circle cx="600" cy="550" r="30" fill="#FFFFFF" stroke="#00B894" stroke-width="3" filter="url(#shadow)"/>
+  <text x="600" y="550" text-anchor="middle" dominant-baseline="central" font-size="13px" font-weight="bold" fill="#2D3436">配送API</text>
+  <rect x="60" y="592" width="780" height="50" rx="8" fill="#E8F8F5" stroke="#00B894" stroke-width="2"/>
+  <text x="450.0" y="617.0" text-anchor="middle" font-size="14px"  fill="#2D3436" dominant-baseline="central">✦ ERP/DWHがハブ。接続数が多いノードほど障害影響が大きい</text>
+</svg>

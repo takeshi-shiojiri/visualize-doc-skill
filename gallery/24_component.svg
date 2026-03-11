@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 900 650"
+     width="900" height="650"
+     role="img" aria-labelledby="diagram-title diagram-desc"
+     style="font-family: 'Noto Sans CJK JP', 'Hiragino Sans', 'Yu Gothic', 'sans-serif';">
+  <title id="diagram-title">コンポーネント図</title>
+  <desc id="diagram-desc">マイクロサービス構成</desc>
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#D5D8DC" flood-opacity="0.4"/>
+    </filter>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10"
+            refX="8" refY="5" orient="auto-start-reverse">
+      <polygon points="0 0, 10 5, 0 10" fill="#636E72"/>
+    </marker>
+  </defs>
+  <rect width="900" height="650" fill="#F5F7FA" rx="0"/>
+  <text x="450.0" y="45" text-anchor="middle" font-size="28px" font-weight="bold" fill="#2D3436" dominant-baseline="central">ECプラットフォーム コンポーネント図</text>
+  <text x="450.0" y="72" text-anchor="middle" font-size="18px"  fill="#636E72" dominant-baseline="central">マイクロサービスの構成と依存関係</text>
+  <rect x="80" y="130" width="200" height="80" rx="8" fill="#FFFFFF" stroke="#74B9FF" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="255" y="135" width="18" height="12" rx="2" fill="none" stroke="#74B9FF" stroke-width="1.5"/>
+  <rect x="251" y="137" width="8" height="3" rx="1" fill="#74B9FF"/>
+  <rect x="251" y="142" width="8" height="3" rx="1" fill="#74B9FF"/>
+  <text x="180.0" y="174.0" text-anchor="middle" font-size="13px" font-weight="bold" fill="#2D3436">API Gateway</text>
+  <rect x="60" y="280" width="160" height="70" rx="8" fill="#FFFFFF" stroke="#00B894" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="195" y="285" width="18" height="12" rx="2" fill="none" stroke="#00B894" stroke-width="1.5"/>
+  <rect x="191" y="287" width="8" height="3" rx="1" fill="#00B894"/>
+  <rect x="191" y="292" width="8" height="3" rx="1" fill="#00B894"/>
+  <text x="140.0" y="319.0" text-anchor="middle" font-size="13px" font-weight="bold" fill="#2D3436">認証サービス</text>
+  <rect x="260" y="280" width="160" height="70" rx="8" fill="#FFFFFF" stroke="#FDCB6E" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="395" y="285" width="18" height="12" rx="2" fill="none" stroke="#FDCB6E" stroke-width="1.5"/>
+  <rect x="391" y="287" width="8" height="3" rx="1" fill="#FDCB6E"/>
+  <rect x="391" y="292" width="8" height="3" rx="1" fill="#FDCB6E"/>
+  <text x="340.0" y="319.0" text-anchor="middle" font-size="13px" font-weight="bold" fill="#2D3436">商品サービス</text>
+  <rect x="460" y="280" width="160" height="70" rx="8" fill="#FFFFFF" stroke="#FF7675" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="595" y="285" width="18" height="12" rx="2" fill="none" stroke="#FF7675" stroke-width="1.5"/>
+  <rect x="591" y="287" width="8" height="3" rx="1" fill="#FF7675"/>
+  <rect x="591" y="292" width="8" height="3" rx="1" fill="#FF7675"/>
+  <text x="540.0" y="319.0" text-anchor="middle" font-size="13px" font-weight="bold" fill="#2D3436">注文サービス</text>
+  <rect x="660" y="280" width="160" height="70" rx="8" fill="#FFFFFF" stroke="#A29BFE" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="795" y="285" width="18" height="12" rx="2" fill="none" stroke="#A29BFE" stroke-width="1.5"/>
+  <rect x="791" y="287" width="8" height="3" rx="1" fill="#A29BFE"/>
+  <rect x="791" y="292" width="8" height="3" rx="1" fill="#A29BFE"/>
+  <text x="740.0" y="319.0" text-anchor="middle" font-size="13px" font-weight="bold" fill="#2D3436">決済サービス</text>
+  <rect x="160" y="430" width="160" height="70" rx="8" fill="#FFFFFF" stroke="#FDCB6E" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="295" y="435" width="18" height="12" rx="2" fill="none" stroke="#FDCB6E" stroke-width="1.5"/>
+  <rect x="291" y="437" width="8" height="3" rx="1" fill="#FDCB6E"/>
+  <rect x="291" y="442" width="8" height="3" rx="1" fill="#FDCB6E"/>
+  <text x="240.0" y="469.0" text-anchor="middle" font-size="13px" font-weight="bold" fill="#2D3436">商品DB</text>
+  <rect x="360" y="430" width="160" height="70" rx="8" fill="#FFFFFF" stroke="#FF7675" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="495" y="435" width="18" height="12" rx="2" fill="none" stroke="#FF7675" stroke-width="1.5"/>
+  <rect x="491" y="437" width="8" height="3" rx="1" fill="#FF7675"/>
+  <rect x="491" y="442" width="8" height="3" rx="1" fill="#FF7675"/>
+  <text x="440.0" y="469.0" text-anchor="middle" font-size="13px" font-weight="bold" fill="#2D3436">注文DB</text>
+  <rect x="560" y="430" width="160" height="70" rx="8" fill="#FFFFFF" stroke="#FD79A8" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="695" y="435" width="18" height="12" rx="2" fill="none" stroke="#FD79A8" stroke-width="1.5"/>
+  <rect x="691" y="437" width="8" height="3" rx="1" fill="#FD79A8"/>
+  <rect x="691" y="442" width="8" height="3" rx="1" fill="#FD79A8"/>
+  <text x="640.0" y="469.0" text-anchor="middle" font-size="13px" font-weight="bold" fill="#2D3436">通知サービス</text>
+  <rect x="360" y="550" width="160" height="60" rx="8" fill="#FFFFFF" stroke="#636E72" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="495" y="555" width="18" height="12" rx="2" fill="none" stroke="#636E72" stroke-width="1.5"/>
+  <rect x="491" y="557" width="8" height="3" rx="1" fill="#636E72"/>
+  <rect x="491" y="562" width="8" height="3" rx="1" fill="#636E72"/>
+  <text x="440.0" y="584.0" text-anchor="middle" font-size="13px" font-weight="bold" fill="#2D3436">メッセージキュー</text>
+  <line x1="180" y1="210" x2="140" y2="280" stroke="#636E72" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <line x1="180" y1="210" x2="340" y2="280" stroke="#636E72" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <line x1="180" y1="210" x2="540" y2="280" stroke="#636E72" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <line x1="540" y1="350" x2="740" y2="280" stroke="#636E72" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <line x1="340" y1="350" x2="240" y2="430" stroke="#636E72" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <line x1="540" y1="350" x2="440" y2="430" stroke="#636E72" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <line x1="540" y1="350" x2="640" y2="430" stroke="#636E72" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <line x1="640" y1="500" x2="440" y2="550" stroke="#636E72" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <rect x="60" y="592" width="780" height="50" rx="8" fill="#E8F8F5" stroke="#00B894" stroke-width="2"/>
+  <text x="450.0" y="617.0" text-anchor="middle" font-size="14px"  fill="#2D3436" dominant-baseline="central">✦ 矢印は依存方向。各サービスは独立してデプロイ可能</text>
+</svg>

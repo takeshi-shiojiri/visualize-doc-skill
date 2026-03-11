@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>visualize-doc-v2 Diagram Catalog</title>
+<style>
+  :root {
+    --bg: #F5F7FA;
+    --white: #FFFFFF;
+    --text-primary: #2D3436;
+    --text-secondary: #636E72;
+    --text-caption: #95A5A6;
+    --border-light: #D5D8DC;
+    --blue: #74B9FF;
+    --teal: #00B894;
+    --yellow: #FDCB6E;
+    --red: #FF7675;
+    --purple: #A29BFE;
+    --pink: #FD79A8;
+    --bg-blue: #EBF5FB;
+    --bg-teal: #E8F8F5;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Noto Sans CJK JP', 'Hiragino Sans', 'Yu Gothic', system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text-primary);
+    line-height: 1.6;
+  }
+
+  /* ---- Hero ---- */
+  .hero {
+    text-align: center;
+    padding: 80px 24px 60px;
+    background: linear-gradient(135deg, var(--bg-blue) 0%, var(--bg) 50%, var(--bg-teal) 100%);
+    border-bottom: 1px solid var(--border-light);
+  }
+  .hero h1 {
+    font-size: 36px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin-bottom: 12px;
+  }
+  .hero h1 span { color: var(--blue); }
+  .hero p {
+    font-size: 18px;
+    color: var(--text-secondary);
+    max-width: 640px;
+    margin: 0 auto;
+  }
+  .hero .stats {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 32px;
+  }
+  .hero .stat { text-align: center; }
+  .hero .stat-num {
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--blue);
+  }
+  .hero .stat-label {
+    font-size: 13px;
+    color: var(--text-caption);
+  }
+
+  /* ---- Tab Nav ---- */
+  .tab-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px 24px;
+    position: sticky;
+    top: 0;
+    background: rgba(245,247,250,0.92);
+    backdrop-filter: blur(12px);
+    z-index: 100;
+    border-bottom: 1px solid var(--border-light);
+  }
+  .tab-nav button {
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    color: var(--text-secondary);
+    border: 1px solid var(--border-light);
+    background: var(--white);
+    transition: all 0.2s;
+  }
+  .tab-nav button:hover {
+    color: var(--blue);
+    border-color: var(--blue);
+  }
+  .tab-nav button.active {
+    color: var(--white);
+    background: var(--blue);
+    border-color: var(--blue);
+  }
+
+  /* ---- Container ---- */
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+  }
+
+  /* ---- Category Section ---- */
+  .category-section {
+    display: none;
+  }
+  .category-section.active {
+    display: block;
+  }
+  .category-section h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+  .category-section > p {
+    color: var(--text-secondary);
+    font-size: 14px;
+    margin-bottom: 28px;
+  }
+
+  /* ---- Tile Grid ---- */
+  .tile-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  /* ---- Tile ---- */
+  .tile {
+    background: var(--white);
+    border-radius: 12px;
+    border: 1px solid var(--border-light);
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    transition: box-shadow 0.2s, transform 0.2s;
+  }
+  .tile:hover {
+    box-shadow: 0 6px 24px rgba(0,0,0,0.10);
+    transform: translateY(-2px);
+  }
+  .tile-img {
+    background: var(--bg);
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    overflow: hidden;
+  }
+  .tile-img img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 4px;
+  }
+  .tile-info {
+    padding: 14px 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .tile-badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 10px;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--white);
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .tile-title {
+    font-size: 14px;
+    font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  /* ---- Modal ---- */
+  .modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 500;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+  }
+  .modal-overlay.active {
+    display: flex;
+  }
+  .modal-content {
+    background: var(--white);
+    border-radius: 16px;
+    max-width: 900px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+    animation: modalIn 0.2s ease-out;
+  }
+  @keyframes modalIn {
+    from { opacity: 0; transform: scale(0.95) translateY(10px); }
+    to { opacity: 1; transform: scale(1) translateY(0); }
+  }
+
+  .modal-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 20px 24px;
+    border-bottom: 1px solid var(--border-light);
+  }
+  .modal-header h3 {
+    font-size: 18px;
+    font-weight: 700;
+    flex: 1;
+  }
+  .modal-func {
+    font-size: 13px;
+    color: var(--text-caption);
+    font-family: 'SF Mono', 'Fira Code', monospace;
+  }
+  .modal-close {
+    width: 32px;
+    height: 32px;
+    border: none;
+    background: var(--bg);
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.15s;
+    flex-shrink: 0;
+  }
+  .modal-close:hover {
+    background: var(--border-light);
+  }
+
+  .modal-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 0;
+  }
+  .modal-input {
+    padding: 24px;
+    background: #FAFBFC;
+    border-right: 1px solid var(--border-light);
+  }
+  .modal-input .label {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-caption);
+    margin-bottom: 12px;
+  }
+  .modal-input .prompt {
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--text-primary);
+  }
+  .modal-input .prompt em {
+    font-style: normal;
+    background: var(--bg-blue);
+    padding: 1px 6px;
+    border-radius: 4px;
+    font-size: 13px;
+  }
+  .modal-output {
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg);
+    cursor: pointer;
+    position: relative;
+  }
+  .modal-output img {
+    max-width: 100%;
+    max-height: 420px;
+    object-fit: contain;
+    border-radius: 6px;
+    transition: transform 0.2s;
+  }
+  .modal-output:hover img {
+    transform: scale(1.02);
+  }
+  .modal-output .zoom-hint {
+    position: absolute;
+    bottom: 8px;
+    right: 12px;
+    font-size: 11px;
+    color: var(--text-caption);
+    background: rgba(255,255,255,0.8);
+    padding: 2px 8px;
+    border-radius: 8px;
+  }
+
+  .modal-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    padding: 14px 24px 18px;
+    border-top: 1px solid var(--border-light);
+  }
+  .tag {
+    font-size: 11px;
+    padding: 2px 10px;
+    border-radius: 10px;
+    background: var(--bg);
+    color: var(--text-secondary);
+    border: 1px solid var(--border-light);
+  }
+
+  /* ---- Lightbox ---- */
+  .lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    z-index: 1000;
+    cursor: zoom-out;
+    justify-content: center;
+    align-items: center;
+  }
+  .lightbox.active { display: flex; }
+  .lightbox img {
+    max-width: 95vw;
+    max-height: 95vh;
+    object-fit: contain;
+    border-radius: 8px;
+    background: var(--white);
+  }
+
+  /* ---- Footer ---- */
+  footer {
+    text-align: center;
+    padding: 40px 24px;
+    color: var(--text-caption);
+    font-size: 13px;
+    border-top: 1px solid var(--border-light);
+  }
+
+  /* ---- Responsive ---- */
+  @media (max-width: 768px) {
+    .hero h1 { font-size: 28px; }
+    .hero .stats { gap: 20px; }
+    .hero .stat-num { font-size: 24px; }
+    .tile-grid { grid-template-columns: 1fr; }
+    .tile-img { height: 160px; }
+    .modal-body { grid-template-columns: 1fr; }
+    .modal-input { border-right: none; border-bottom: 1px solid var(--border-light); }
+    .modal-content { max-height: 95vh; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Hero -->
+<section class="hero">
+  <h1><span>visualize-doc</span> Diagram Catalog</h1>
+  <p>テキスト入力から自動生成される図解のサンプルギャラリー。<br>「こう書くと → こう出る」が一目でわかります。</p>
+  <div class="stats">
+    <div class="stat"><div class="stat-num">8</div><div class="stat-label">ビルダー関数</div></div>
+    <div class="stat"><div class="stat-num">26</div><div class="stat-label">サンプル図解</div></div>
+    <div class="stat"><div class="stat-num">26</div><div class="stat-label">対応図解タイプ</div></div>
+    <div class="stat"><div class="stat-num">6</div><div class="stat-label">カテゴリ</div></div>
+  </div>
+</section>
+
+<!-- Tab Nav -->
+<nav class="tab-nav" id="tabNav"></nav>
+
+<!-- Content -->
+<div class="container" id="content"></div>
+
+<!-- Modal -->
+<div class="modal-overlay" id="modal" onclick="if(event.target===this)closeModal()">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="tile-badge" id="modalBadge"></span>
+      <h3 id="modalTitle"></h3>
+      <span class="modal-func" id="modalFunc"></span>
+      <button class="modal-close" onclick="closeModal()">&times;</button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-input">
+        <div class="label">入力テキスト例</div>
+        <div class="prompt" id="modalPrompt"></div>
+      </div>
+      <div class="modal-output" onclick="openLightbox(this)">
+        <img id="modalImg" src="" alt="">
+        <span class="zoom-hint">Click to zoom</span>
+      </div>
+    </div>
+    <div class="modal-tags" id="modalTags"></div>
+  </div>
+</div>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <img id="lightboxImg" src="" alt="">
+</div>
+
+<footer>
+  visualize-doc-v2 Diagram Catalog &mdash; Generated by SVG Engine
+</footer>
+
+<script>
+// ---- Data ----
+const categories = [
+  { id: "cat-overview", label: "全体像・分類", title: "1. 全体像・分類", desc: "階層構造、分類、包含関係など、情報の全体像を俯瞰するための図解" },
+  { id: "cat-causal", label: "因果・メカニズム", title: "2. 因果・メカニズム", desc: "原因と結果、循環構造、フィードバックループなど、仕組みを説明する図解" },
+  { id: "cat-process", label: "プロセス・手順", title: "3. プロセス・手順", desc: "ステップ、分岐、時系列など、手順やプロセスを表現する図解" },
+  { id: "cat-structure", label: "関係性・構造", title: "4. 関係性・構造", desc: "レイヤー構成、依存関係、ネットワークなど、システムの構造を表現する図解" },
+  { id: "cat-compare", label: "比較・意思決定", title: "5. 比較・意思決定", desc: "選定、評価、ギャップ分析など、意思決定を支援する図解" },
+  { id: "cat-experience", label: "体験・認知", title: "6. 体験・認知", desc: "顧客体験、サービス設計、ペルソナ分析など、人の体験を可視化する図解" },
+];
+
+const diagrams = [
+  // ---- 全体像・分類 ----
+  { cat: "cat-overview", badge: "概要図", color: "#74B9FF", title: "LINE CRM施策の全体像", func: "build_vertical()", img: "01_vertical.svg",
+    prompt: 'LINE CRM施策の全体像を図解してください。<br><em>目的</em>: LINEを活用した顧客LTV最大化<br><em>ターゲット</em>: 新規顧客 / 既存顧客 / VIP顧客<br><em>施策内容</em>: 友だち追加、セグメント配信、リッチメニュー<br><em>KPI</em>: 友だち追加数、配信開封率、LINE経由売上',
+    tags: ["カプセル見出し","カード群","接続矢印","フッター"] },
+  { cat: "cat-overview", badge: "階層ツリー", color: "#A29BFE", title: "会社組織図（上→下ツリー）", func: "build_tree(direction='TB')", img: "07_tree_tb.svg",
+    prompt: '会社の組織図を図解してください。<br>CEO配下に<em>CTO</em>、<em>CFO</em>、<em>COO</em>がいます。<br>CTO配下にエンジニアリング部とプロダクト部、<br>CFO配下に経理部と財務部、<br>COO配下に営業部、CS部、マーケ部があります。',
+    tags: ["階層ツリー","TB方向","色分けブランチ","エルボーコネクタ"] },
+  { cat: "cat-overview", badge: "マインドマップ", color: "#FD79A8", title: "マーケティング戦略 マインドマップ", func: "build_tree(direction='LR')", img: "08_tree_lr.svg",
+    prompt: 'マーケティング戦略をマインドマップで図解してください。<br>中心: <em>ブランド戦略</em><br>枝: デジタル（SEO、SNS、広告）<br>　　 オフライン（展示会、DM）<br>　　 PR（プレスリリース、メディア露出）',
+    tags: ["マインドマップ","LR方向","3段階層"] },
+  { cat: "cat-overview", badge: "マトリクス", color: "#FDCB6E", textColor: "#2D3436", title: "フロントエンドフレームワーク比較", func: "build_matrix()", img: "03_matrix.svg",
+    prompt: '<em>React</em>, <em>Vue</em>, <em>Svelte</em>の3つのフレームワークを<em>学習コスト</em>、<em>パフォーマンス</em>、<em>エコシステム</em>、<em>TypeScript対応</em>、<em>採用実績</em>の観点で比較してください',
+    tags: ["2軸マトリクス","列カプセルヘッダー","交互背景"] },
+  { cat: "cat-overview", badge: "ベン図", color: "#A29BFE", title: "スキルセットのベン図", func: "SVG直接記述", img: "19_venn.svg",
+    prompt: 'プロダクト人材に必要なスキルセットをベン図で図解してください。<br><em>ビジネス</em>、<em>テクノロジー</em>、<em>デザイン</em>の3領域の重なりを表現',
+    tags: ["3円重なり","交差ラベル","透明度"] },
+  { cat: "cat-overview", badge: "オントロジー", color: "#00B894", title: "デジタルマーケティング タクソノミー", func: "build_tree(direction='TB')", img: "17_ontology.svg",
+    prompt: 'デジタルマーケティングの概念を分類してください。<br><em>オウンドメディア</em>（Webサイト、ブログ、メール）<br><em>ペイドメディア</em>（検索広告、SNS広告、ディスプレイ）<br><em>アーンドメディア</em>（SNS、PR、口コミ）',
+    tags: ["タクソノミー","3段階層","トリプルメディア"] },
+
+  // ---- 因果・メカニズム ----
+  { cat: "cat-causal", badge: "因果ループ図", color: "#74B9FF", title: "顧客満足の因果ループ図", func: "build_flow()", img: "13_causal_loop.svg",
+    prompt: '顧客満足の因果ループを図解してください。<br><em>サービス品質</em>→顧客満足度→リテンション率→売上→開発投資→品質（<em>強化ループ</em>）。<br>売上→コスト圧力→投資抑制（<em>抑制ループ</em>）',
+    tags: ["強化ループ(+)","抑制ループ(-)","循環構造"] },
+  { cat: "cat-causal", badge: "ロジックツリー", color: "#FF7675", title: "売上低下の原因分析", func: "build_tree(direction='LR')", img: "11_logic_tree.svg",
+    prompt: '売上が低下している原因を分析してください。<br><em>新規獲得の減少</em>（広告効率悪化、認知チャネル減）<br><em>既存顧客の離脱</em>（競合流出、品質低下）<br><em>客単価の低下</em>（アップセル不足、値引き依存）',
+    tags: ["Why型分解","LR方向","原因→根本原因"] },
+  { cat: "cat-causal", badge: "IPO図", color: "#00B894", title: "データパイプライン IPO図", func: "build_flow(direction='LR')", img: "12_ipo.svg",
+    prompt: 'データパイプラインを図解してください。<br><em>入力</em>: CSVファイル, APIデータ →<br><em>処理</em>: バリデーション → 変換・正規化 → 集計 →<br><em>出力</em>: レポート, DWH格納',
+    tags: ["入力→処理→出力","LR方向","複数入出力"] },
+  { cat: "cat-causal", badge: "フィードバック図", color: "#00B894", title: "アジャイル開発サイクル", func: "build_flow() + 循環エッジ", img: "10_flow_cycle.svg",
+    prompt: 'アジャイル開発サイクルを図解してください。<br><em>スプリント計画</em> → 設計 → 実装 → テスト → <em>スプリントレビュー</em> → レトロスペクティブ → 計画に戻る',
+    tags: ["フィードバック図","循環エッジ（破線）","DFSサイクル検出"] },
+
+  // ---- プロセス・手順 ----
+  { cat: "cat-process", badge: "フローチャート", color: "#FF7675", title: "ユーザー登録フロー", func: "build_flow()", img: "09_flow.svg",
+    prompt: 'ユーザー登録フローを図解してください。<br>開始 → メール入力 → <em>バリデーション（有効？）</em><br>→ OK: パスワード設定 → 確認メール送信 → メール認証<br>→ 認証済: <em>登録完了</em> / 期限切れ: トークン無効<br>→ NG: エラー表示 → メール入力に戻る',
+    tags: ["start/end楕円","decision菱形","分岐ラベル","循環エッジ"] },
+  { cat: "cat-process", badge: "シーケンス図", color: "#A29BFE", title: "ログイン認証 シーケンス図", func: "SVG直接記述", img: "20_sequence.svg",
+    prompt: 'ログイン認証のシーケンス図を作成してください。<br><em>ユーザー</em>→フロントエンド: ログインボタン押下<br>フロント→<em>APIサーバー</em>: POST /auth/login<br>API→<em>DB</em>: ユーザー検索<br>DB→API: データ返却<br>API: <em>JWT生成</em><br>API→フロント: 200 OK + token<br>フロント→ユーザー: ダッシュボード表示',
+    tags: ["アクター","ライフライン","リクエスト/レスポンス"] },
+  { cat: "cat-process", badge: "スイムレーン図", color: "#FD79A8", title: "問い合わせ対応 スイムレーン図", func: "build_journey_map()", img: "15_swimlane.svg",
+    prompt: '問い合わせ対応の業務フローをスイムレーンで図解してください。<br>部門: <em>顧客</em>、<em>CS部門</em>、<em>技術部門</em>、<em>マネージャー</em><br>フェーズ: 受付 → 一次対応 → 調査 → エスカレーション → 解決・回答',
+    tags: ["部門横断","4レーン×5フェーズ","責務分離"] },
+  { cat: "cat-process", badge: "タイムライン", color: "#FDCB6E", textColor: "#2D3436", title: "プロジェクトロードマップ", func: "build_timeline()", img: "02_timeline.svg",
+    prompt: 'プロジェクトのロードマップを図解してください。<br><em>Q1</em>: 要件定義<br><em>Q2</em>: 設計・開発<br><em>Q3</em>: テスト・QA<br><em>Q4</em>: リリース・運用',
+    tags: ["水平タイムライン","上下交互配置","ピリオドラベル"] },
+  { cat: "cat-process", badge: "状態遷移図", color: "#74B9FF", title: "注文ステータス 状態遷移図", func: "build_flow(direction='LR')", img: "14_state_transition.svg",
+    prompt: 'ECサイトの注文ステータスの状態遷移を図解してください。<br><em>カート</em>→注文確定→決済完了→発送済→<em>配達完了</em><br>分岐: 注文確定→<em>キャンセル</em>、決済完了→<em>返金</em>、配達完了→<em>返品</em>',
+    tags: ["状態遷移","LR方向","複数終端"] },
+
+  // ---- 関係性・構造 ----
+  { cat: "cat-structure", badge: "レイヤー図", color: "#74B9FF", title: "Webアプリ アーキテクチャ", func: "build_layer()", img: "05_layer.svg",
+    prompt: 'Webアプリのアーキテクチャを図解してください。<br><em>インフラ層</em>: AWS<br><em>データ層</em>: PostgreSQL / Redis<br><em>API層</em>: FastAPI<br><em>フロントエンド層</em>: Next.js',
+    tags: ["4層スタック","層間矢印","色分けレイヤー"] },
+  { cat: "cat-structure", badge: "コンポーネント図", color: "#00B894", title: "ECプラットフォーム コンポーネント図", func: "SVG直接記述", img: "24_component.svg",
+    prompt: 'ECプラットフォームのマイクロサービス構成を図解してください。<br><em>API Gateway</em>、<em>認証</em>、<em>商品</em>、<em>注文</em>、<em>決済</em>、<em>通知</em>の各サービスとDB・メッセージキューの依存関係',
+    tags: ["マイクロサービス","依存矢印","コンポーネントアイコン"] },
+  { cat: "cat-structure", badge: "ネットワーク図", color: "#FF7675", title: "社内システム ネットワーク図", func: "SVG直接記述", img: "25_network.svg",
+    prompt: '社内システム間の接続関係をネットワーク図で図解してください。<br><em>ERP</em>, <em>CRM</em>, <em>EC基盤</em>, <em>MA</em>, <em>DWH</em>, WMS, 決済GW, BI, 配送API の多対多の接続',
+    tags: ["多対多接続","ハブノード","ノードサイズ"] },
+  { cat: "cat-structure", badge: "概念地図", color: "#A29BFE", title: "DX推進 概念地図", func: "SVG直接記述", img: "23_concept_map.svg",
+    prompt: 'DX推進の構成要素と関係性を概念地図で表現してください。<br>中心: <em>DX推進</em><br>周辺: <em>データ活用</em>、<em>プロセス改革</em>、AI/ML、自動化、クラウド、セキュリティ、人材育成',
+    tags: ["概念間距離","関係ラベル","ノードサイズ"] },
+
+  // ---- 比較・意思決定 ----
+  { cat: "cat-compare", badge: "比較表", color: "#74B9FF", title: "CRMツール選定 スコアカード", func: "build_matrix()", img: "26_scorecard.svg",
+    prompt: 'CRMツール選定の比較評価を行ってください。<br><em>Salesforce</em>, <em>HubSpot</em>, <em>Zoho CRM</em>を<em>機能充実度</em>、<em>カスタマイズ性</em>、<em>料金</em>、<em>導入容易性</em>、<em>サポート体制</em>で5点満点評価',
+    tags: ["スコアカード","重み付き評価","5段階スコア"] },
+  { cat: "cat-compare", badge: "ポジショニングマップ", color: "#00B894", title: "CRMツール ポジショニングマップ", func: "SVG直接記述", img: "21_positioning_map.svg",
+    prompt: 'CRMツールを<em>価格帯</em>×<em>機能の豊富さ</em>の2軸でポジショニングマップに配置してください。<br>6つのツールの相対的な位置関係を表現',
+    tags: ["2軸座標","相対位置","バブルプロット"] },
+  { cat: "cat-compare", badge: "ギャップ図", color: "#FF7675", title: "業務改善 As-Is / To-Be", func: "build_two_columns()", img: "06_two_columns.svg",
+    prompt: '業務改善のギャップ分析を図解してください。<br><em>受注処理</em>: FAX手動 → EC+API自動<br><em>在庫管理</em>: 目視棚卸し → バーコード+IoT<br><em>顧客対応</em>: 電話+メール → チャットbot+CRM',
+    tags: ["左右比較","VS区切り","色対比（赤/緑）"] },
+  { cat: "cat-compare", badge: "トレードオフ曲線", color: "#FDCB6E", textColor: "#2D3436", title: "開発速度 vs 品質 トレードオフ", func: "SVG直接記述", img: "22_tradeoff.svg",
+    prompt: '開発速度と品質のトレードオフを可視化してください。<br><em>効率フロンティア</em>上に<em>MVP</em>（速度重視）、<em>最適点</em>（バランス）、<em>エンタープライズ</em>（品質重視）をプロット',
+    tags: ["効率フロンティア","最適点","2軸座標"] },
+
+  // ---- 体験・認知 ----
+  { cat: "cat-experience", badge: "CJM", color: "#FD79A8", title: "ECサイト カスタマージャーニーマップ", func: "build_journey_map()", img: "04_journey_map.svg",
+    prompt: 'ECサイトのカスタマージャーニーを図解してください。<br>フェーズ: <em>認知</em> → 検討 → 購入 → 利用 → 推奨<br>レーン: ユーザー行動、感情、タッチポイント、課題',
+    tags: ["5フェーズ×4レーン","フェーズカプセル","レーンラベル"] },
+  { cat: "cat-experience", badge: "サービスBP", color: "#74B9FF", title: "オンライン注文 サービスブループリント", func: "build_journey_map()", img: "16_service_blueprint.svg",
+    prompt: 'オンライン注文のサービスブループリントを作成してください。<br>フェーズ: <em>検索</em> → 商品選択 → 決済 → 配送 → サポート<br>レーン: <em>顧客行動</em>、<em>フロントステージ</em>、<em>バックステージ</em>、サポートプロセス',
+    tags: ["フロント/バック分離","可視線","4レーン×5フェーズ"] },
+  { cat: "cat-experience", badge: "ペルソナ図", color: "#A29BFE", title: "ペルソナ → 課題 → 提供価値", func: "build_tree(direction='LR')", img: "18_persona_value.svg",
+    prompt: 'ターゲット設計を図解してください。<br><em>EC店舗オーナー</em> → 課題: リピート率が低い → 価値: LINE CRM自動配信<br>　　　　　　　 → 課題: 広告費が高い → 価値: SEO+コンテンツ集客<br><em>マーケ担当</em> → 課題: 効果不明 → 価値: ダッシュボード<br>　　　　　 → 課題: 属人的 → 価値: ワークフロー自動化',
+    tags: ["ペルソナ→課題→価値","LR方向","4段階層"] },
+];
+
+// ---- Render ----
+function render() {
+  const nav = document.getElementById('tabNav');
+  const content = document.getElementById('content');
+
+  // Tabs
+  nav.innerHTML = categories.map((c, i) =>
+    `<button data-cat="${c.id}" class="${i === 0 ? 'active' : ''}" onclick="switchTab('${c.id}')">${c.label}</button>`
+  ).join('');
+
+  // Sections
+  content.innerHTML = categories.map((c, i) => {
+    const items = diagrams.filter(d => d.cat === c.id);
+    const tiles = items.map((d, j) => `
+      <div class="tile" onclick="openModal(${diagrams.indexOf(d)})">
+        <div class="tile-img"><img src="${d.img}" alt="${d.title}" loading="lazy"></div>
+        <div class="tile-info">
+          <span class="tile-badge" style="background:${d.color};${d.textColor ? 'color:'+d.textColor : ''}">${d.badge}</span>
+          <span class="tile-title">${d.title}</span>
+        </div>
+      </div>
+    `).join('');
+
+    return `
+      <section class="category-section ${i === 0 ? 'active' : ''}" id="${c.id}">
+        <h2>${c.title}</h2>
+        <p>${c.desc}</p>
+        <div class="tile-grid">${tiles}</div>
+      </section>
+    `;
+  }).join('');
+}
+
+// ---- Tab Switch ----
+function switchTab(catId) {
+  document.querySelectorAll('.tab-nav button').forEach(b => b.classList.toggle('active', b.dataset.cat === catId));
+  document.querySelectorAll('.category-section').forEach(s => s.classList.toggle('active', s.id === catId));
+}
+
+// ---- Modal ----
+function openModal(idx) {
+  const d = diagrams[idx];
+  document.getElementById('modalBadge').textContent = d.badge;
+  document.getElementById('modalBadge').style.background = d.color;
+  document.getElementById('modalBadge').style.color = d.textColor || '#fff';
+  document.getElementById('modalTitle').textContent = d.title;
+  document.getElementById('modalFunc').textContent = d.func;
+  document.getElementById('modalPrompt').innerHTML = d.prompt;
+  document.getElementById('modalImg').src = d.img;
+  document.getElementById('modalImg').alt = d.title;
+  document.getElementById('modalTags').innerHTML = d.tags.map(t => `<span class="tag">${t}</span>`).join('');
+  document.getElementById('modal').classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+  document.getElementById('modal').classList.remove('active');
+  document.body.style.overflow = '';
+}
+
+// ---- Lightbox ----
+function openLightbox(el) {
+  const img = el.querySelector('img');
+  document.getElementById('lightboxImg').src = img.src;
+  document.getElementById('lightboxImg').alt = img.alt;
+  document.getElementById('lightbox').classList.add('active');
+}
+
+function closeLightbox() {
+  document.getElementById('lightbox').classList.remove('active');
+}
+
+// ---- Keyboard ----
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    if (document.getElementById('lightbox').classList.contains('active')) {
+      closeLightbox();
+    } else {
+      closeModal();
+    }
+  }
+});
+
+// ---- Init ----
+render();
+</script>
+</body>
+</html>

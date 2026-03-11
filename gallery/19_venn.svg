@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 800 600"
+     width="800" height="600"
+     role="img" aria-labelledby="diagram-title diagram-desc"
+     style="font-family: 'Noto Sans CJK JP', 'Hiragino Sans', 'Yu Gothic', 'sans-serif';">
+  <title id="diagram-title">スキルセットのベン図</title>
+  <desc id="diagram-desc">3つの専門領域の重なり</desc>
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#D5D8DC" flood-opacity="0.4"/>
+    </filter>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10"
+            refX="8" refY="5" orient="auto-start-reverse">
+      <polygon points="0 0, 10 5, 0 10" fill="#636E72"/>
+    </marker>
+  </defs>
+  <rect width="800" height="600" fill="#F5F7FA" rx="0"/>
+  <text x="400.0" y="50" text-anchor="middle" font-size="28px" font-weight="bold" fill="#2D3436" dominant-baseline="central">プロダクト人材に必要なスキルセット</text>
+  <text x="400.0" y="78" text-anchor="middle" font-size="18px"  fill="#636E72" dominant-baseline="central">3つの専門領域の交差点</text>
+  <circle cx="320" cy="280" r="140" fill="#74B9FF" opacity="0.18" stroke="#74B9FF" stroke-width="2.5"/>
+  <circle cx="480" cy="280" r="140" fill="#00B894" opacity="0.18" stroke="#00B894" stroke-width="2.5"/>
+  <circle cx="400" cy="400" r="140" fill="#FF7675" opacity="0.18" stroke="#FF7675" stroke-width="2.5"/>
+  <text x="250" y="210" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">ビジネス</text>
+  <text x="550" y="210" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">テクノロジー</text>
+  <text x="400" y="500" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">デザイン</text>
+  <text x="400" y="260" text-anchor="middle" font-size="14px"  fill="#2D3436" dominant-baseline="central">データ分析</text>
+  <text x="340" y="370" text-anchor="middle" font-size="14px"  fill="#2D3436" dominant-baseline="central">UXリサーチ</text>
+  <text x="460" y="370" text-anchor="middle" font-size="14px"  fill="#2D3436" dominant-baseline="central">技術設計</text>
+  <circle cx="400" cy="330" r="30" fill="#A29BFE" opacity="0.3"/>
+  <text x="400" y="330" text-anchor="middle" dominant-baseline="central" font-size="11px" font-weight="bold" fill="#2D3436">PdM</text>
+  <rect x="60" y="530" width="680" height="50" rx="8" fill="#E8F8F5" stroke="#00B894" stroke-width="2"/>
+  <text x="400.0" y="555.0" text-anchor="middle" font-size="14px"  fill="#2D3436" dominant-baseline="central">✦ 3領域の交差点にプロダクトマネージャーの役割がある</text>
+</svg>

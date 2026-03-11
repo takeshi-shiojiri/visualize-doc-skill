@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1000 675.2"
+     width="1000" height="675.2"
+     role="img" aria-labelledby="diagram-title diagram-desc"
+     style="font-family: 'Noto Sans CJK JP', 'Hiragino Sans', 'Yu Gothic', 'sans-serif';">
+  <title id="diagram-title">プロジェクトロードマップ</title>
+  <desc id="diagram-desc">EC基盤リニューアル 2026年度計画</desc>
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#D5D8DC" flood-opacity="0.4"/>
+    </filter>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10"
+            refX="8" refY="5" orient="auto-start-reverse">
+      <polygon points="0 0, 10 5, 0 10" fill="#636E72"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="675.2" fill="#F5F7FA" rx="0"/>
+  <text x="500.0" y="76.8" text-anchor="middle" font-size="28px" font-weight="bold" fill="#2D3436" dominant-baseline="central">プロジェクトロードマップ</text>
+  <text x="500.0" y="116.39999999999999" text-anchor="middle" font-size="18px"  fill="#636E72" dominant-baseline="central">EC基盤リニューアル 2026年度計画</text>
+  <line x1="152.5" y1="346.2" x2="847.5" y2="346.2" stroke="#D5D8DC" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="162.5" cy="346.2" r="8" fill="#74B9FF" stroke="#FFFFFF" stroke-width="3"/>
+  <line x1="162.5" y1="326.2" x2="162.5" y2="336.2" stroke="#74B9FF" stroke-width="2" stroke-dasharray="4,3"/>
+  <rect x="60.0" y="202.2" width="205.0" height="124" rx="8" fill="#FFFFFF" stroke="#74B9FF" stroke-width="2" filter="url(#shadow)"/>
+  <text x="162.5" y="226.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">要件定義</text>
+  <text x="80.0" y="255.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">現状分析・課題整理</text>
+  <text x="80.0" y="277.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">ステークホルダーヒアリング</text>
+  <text x="80.0" y="299.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">要件ドキュメント作成</text>
+  <text x="162.5" y="194.2" text-anchor="middle" font-size="12px"  fill="#95A5A6" dominant-baseline="central">Q1 (1-3月)</text>
+  <circle cx="387.5" cy="346.2" r="8" fill="#00B894" stroke="#FFFFFF" stroke-width="3"/>
+  <line x1="387.5" y1="356.2" x2="387.5" y2="366.2" stroke="#00B894" stroke-width="2" stroke-dasharray="4,3"/>
+  <rect x="285.0" y="366.2" width="205.0" height="124" rx="8" fill="#FFFFFF" stroke="#00B894" stroke-width="2" filter="url(#shadow)"/>
+  <text x="387.5" y="390.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">設計・開発</text>
+  <text x="305.0" y="419.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">アーキテクチャ設計</text>
+  <text x="305.0" y="441.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">API開発・フロント実装</text>
+  <text x="305.0" y="463.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">データ移行設計</text>
+  <text x="387.5" y="506.2" text-anchor="middle" font-size="12px"  fill="#95A5A6" dominant-baseline="central">Q2 (4-6月)</text>
+  <circle cx="612.5" cy="346.2" r="8" fill="#FDCB6E" stroke="#FFFFFF" stroke-width="3"/>
+  <line x1="612.5" y1="326.2" x2="612.5" y2="336.2" stroke="#FDCB6E" stroke-width="2" stroke-dasharray="4,3"/>
+  <rect x="510.0" y="202.2" width="205.0" height="124" rx="8" fill="#FFFFFF" stroke="#FDCB6E" stroke-width="2" filter="url(#shadow)"/>
+  <text x="612.5" y="226.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">テスト・QA</text>
+  <text x="530.0" y="255.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">単体・結合テスト</text>
+  <text x="530.0" y="277.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">負荷テスト</text>
+  <text x="530.0" y="299.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">UAT・受入テスト</text>
+  <text x="612.5" y="194.2" text-anchor="middle" font-size="12px"  fill="#95A5A6" dominant-baseline="central">Q3 (7-9月)</text>
+  <circle cx="837.5" cy="346.2" r="8" fill="#FF7675" stroke="#FFFFFF" stroke-width="3"/>
+  <line x1="837.5" y1="356.2" x2="837.5" y2="366.2" stroke="#FF7675" stroke-width="2" stroke-dasharray="4,3"/>
+  <rect x="735.0" y="366.2" width="205.0" height="124" rx="8" fill="#FFFFFF" stroke="#FF7675" stroke-width="2" filter="url(#shadow)"/>
+  <text x="837.5" y="390.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">リリース・運用</text>
+  <text x="755.0" y="419.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">段階的リリース</text>
+  <text x="755.0" y="441.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">監視体制構築</text>
+  <text x="755.0" y="463.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">運用ドキュメント整備</text>
+  <text x="837.5" y="506.2" text-anchor="middle" font-size="12px"  fill="#95A5A6" dominant-baseline="central">Q4 (10-12月)</text>
+  <rect x="60" y="565.2" width="880" height="50" rx="8" fill="#E8F8F5" stroke="#00B894" stroke-width="2"/>
+  <text x="500.0" y="590.2" text-anchor="middle" font-size="14px"  fill="#2D3436" dominant-baseline="central">✦ 各フェーズ終了時にステアリングコミッティでGo/No-Go判定</text>
+</svg>

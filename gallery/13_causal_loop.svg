@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1000 1157.2"
+     width="1000" height="1157.2"
+     role="img" aria-labelledby="diagram-title diagram-desc"
+     style="font-family: 'Noto Sans CJK JP', 'Hiragino Sans', 'Yu Gothic', 'sans-serif';">
+  <title id="diagram-title">顧客満足の因果ループ図</title>
+  <desc id="diagram-desc">強化ループと抑制ループの構造</desc>
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#D5D8DC" flood-opacity="0.4"/>
+    </filter>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10"
+            refX="8" refY="5" orient="auto-start-reverse">
+      <polygon points="0 0, 10 5, 0 10" fill="#636E72"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="1157.2" fill="#F5F7FA" rx="0"/>
+  <text x="500.0" y="76.8" text-anchor="middle" font-size="28px" font-weight="bold" fill="#2D3436" dominant-baseline="central">顧客満足の因果ループ図</text>
+  <text x="500.0" y="116.39999999999999" text-anchor="middle" font-size="18px"  fill="#636E72" dominant-baseline="central">強化ループと抑制ループの構造</text>
+  <line x1="500.0" y1="267.2" x2="500.0" y2="331.2" stroke="#636E72" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <rect x="480.0" y="279.2" width="40" height="16" rx="3" fill="#F5F7FA" opacity="0.9"/>
+  <text x="500.0" y="289.2" text-anchor="middle" font-size="12px"  fill="#95A5A6" dominant-baseline="central">+</text>
+  <line x1="500.0" y1="411.2" x2="500.0" y2="475.2" stroke="#636E72" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <rect x="480.0" y="423.2" width="40" height="16" rx="3" fill="#F5F7FA" opacity="0.9"/>
+  <text x="500.0" y="433.20000000000005" text-anchor="middle" font-size="12px"  fill="#95A5A6" dominant-baseline="central">+</text>
+  <line x1="500.0" y1="555.2" x2="500.0" y2="619.2" stroke="#636E72" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <rect x="480.0" y="567.2" width="40" height="16" rx="3" fill="#F5F7FA" opacity="0.9"/>
+  <text x="500.0" y="577.2" text-anchor="middle" font-size="12px"  fill="#95A5A6" dominant-baseline="central">+</text>
+  <line x1="500.0" y1="699.2" x2="500.0" y2="907.2" stroke="#636E72" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <rect x="480.0" y="783.2" width="40" height="16" rx="3" fill="#F5F7FA" opacity="0.9"/>
+  <text x="500.0" y="793.2" text-anchor="middle" font-size="12px"  fill="#95A5A6" dominant-baseline="central">+</text>
+  <line x1="500.0" y1="699.2" x2="500.0" y2="763.2" stroke="#636E72" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <rect x="480.0" y="711.2" width="40" height="16" rx="3" fill="#F5F7FA" opacity="0.9"/>
+  <text x="500.0" y="721.2" text-anchor="middle" font-size="12px"  fill="#95A5A6" dominant-baseline="central">+</text>
+  <line x1="500.0" y1="843.2" x2="500.0" y2="907.2" stroke="#636E72" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <rect x="480.0" y="855.2" width="40" height="16" rx="3" fill="#F5F7FA" opacity="0.9"/>
+  <text x="500.0" y="865.2" text-anchor="middle" font-size="12px"  fill="#95A5A6" dominant-baseline="central">-</text>
+  <path d="M 554.4 947.2 C 618.2 947.2 618.2 227.2 578.2 227.2" fill="none" stroke="#636E72" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arrowhead)"/>
+  <text x="623.25" y="587.2" text-anchor="start" font-size="12px"  fill="#95A5A6" dominant-baseline="central">+</text>
+  <rect x="421.75" y="187.2" width="156.5" height="80" rx="8" fill="#EBF5FB" stroke="#74B9FF" stroke-width="2" filter="url(#shadow)"/>
+  <text x="500.0" y="211.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">サービス品質</text>
+  <text x="500.0" y="240.2" text-anchor="middle" font-size="14px"  fill="#2D3436" dominant-baseline="central">UX・サポート品質</text>
+  <rect x="438.0" y="331.2" width="124.0" height="80" rx="8" fill="#E8F8F5" stroke="#00B894" stroke-width="2" filter="url(#shadow)"/>
+  <text x="500.0" y="355.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">顧客満足度</text>
+  <text x="500.0" y="384.2" text-anchor="middle" font-size="14px"  fill="#2D3436" dominant-baseline="central">NPS・CSAT</text>
+  <rect x="422.8" y="475.20000000000005" width="154.4" height="80" rx="8" fill="#FEF9E7" stroke="#FDCB6E" stroke-width="2" filter="url(#shadow)"/>
+  <text x="500.0" y="499.20000000000005" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">リテンション率</text>
+  <text x="500.0" y="528.2" text-anchor="middle" font-size="14px"  fill="#2D3436" dominant-baseline="central">継続率・LTV</text>
+  <rect x="438.0" y="619.2" width="124.0" height="80" rx="8" fill="#FDEDEC" stroke="#FF7675" stroke-width="2" filter="url(#shadow)"/>
+  <text x="500.0" y="643.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">売上・利益</text>
+  <text x="500.0" y="672.2" text-anchor="middle" font-size="14px"  fill="#2D3436" dominant-baseline="central">月次売上</text>
+  <rect x="445.6" y="907.2" width="108.8" height="80" rx="8" fill="#F0EDFF" stroke="#A29BFE" stroke-width="2" filter="url(#shadow)"/>
+  <text x="500.0" y="931.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">開発投資</text>
+  <text x="500.0" y="960.2" text-anchor="middle" font-size="14px"  fill="#2D3436" dominant-baseline="central">R&amp;D予算</text>
+  <rect x="429.45" y="763.2" width="141.1" height="80" rx="8" fill="#FDEEF4" stroke="#FD79A8" stroke-width="2" filter="url(#shadow)"/>
+  <text x="500.0" y="787.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">コスト圧力</text>
+  <text x="500.0" y="816.2" text-anchor="middle" font-size="14px"  fill="#2D3436" dominant-baseline="central">コスト削減要求</text>
+  <rect x="60" y="1047.2" width="880" height="50" rx="8" fill="#E8F8F5" stroke="#00B894" stroke-width="2"/>
+  <text x="500.0" y="1072.2" text-anchor="middle" font-size="14px"  fill="#2D3436" dominant-baseline="central">✦ 強化ループ(+)を回し、抑制ループ(-)を管理する</text>
+</svg>

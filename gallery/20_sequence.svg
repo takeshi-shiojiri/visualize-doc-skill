@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 900 655"
+     width="900" height="655"
+     role="img" aria-labelledby="diagram-title diagram-desc"
+     style="font-family: 'Noto Sans CJK JP', 'Hiragino Sans', 'Yu Gothic', 'sans-serif';">
+  <title id="diagram-title">ログイン認証シーケンス図</title>
+  <desc id="diagram-desc">ユーザー認証フローの時系列</desc>
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#D5D8DC" flood-opacity="0.4"/>
+    </filter>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10"
+            refX="8" refY="5" orient="auto-start-reverse">
+      <polygon points="0 0, 10 5, 0 10" fill="#636E72"/>
+    </marker>
+  </defs>
+  <rect width="900" height="655" fill="#F5F7FA" rx="0"/>
+  <text x="450.0" y="40" text-anchor="middle" font-size="28px" font-weight="bold" fill="#2D3436" dominant-baseline="central">ログイン認証 シーケンス図</text>
+  <text x="450.0" y="66" text-anchor="middle" font-size="18px"  fill="#636E72" dominant-baseline="central">JWT認証フローの時系列表現</text>
+  <rect x="10.0" y="100" width="100" height="36" rx="6" fill="#74B9FF" filter="url(#shadow)"/>
+  <text x="60.0" y="120" text-anchor="middle" dominant-baseline="central" font-size="13px" font-weight="bold" fill="#FFFFFF">ユーザー</text>
+  <line x1="60.0" y1="138" x2="60.0" y2="595" stroke="#D5D8DC" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <rect x="258.45" y="100" width="123.1" height="36" rx="6" fill="#00B894" filter="url(#shadow)"/>
+  <text x="320.0" y="120" text-anchor="middle" dominant-baseline="central" font-size="13px" font-weight="bold" fill="#FFFFFF">フロントエンド</text>
+  <line x1="320.0" y1="138" x2="320.0" y2="595" stroke="#D5D8DC" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <rect x="526.85" y="100" width="106.3" height="36" rx="6" fill="#FDCB6E" filter="url(#shadow)"/>
+  <text x="580.0" y="120" text-anchor="middle" dominant-baseline="central" font-size="13px" font-weight="bold" fill="#FFFFFF">APIサーバー</text>
+  <line x1="580.0" y1="138" x2="580.0" y2="595" stroke="#D5D8DC" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <rect x="785.1" y="100" width="109.8" height="36" rx="6" fill="#FF7675" filter="url(#shadow)"/>
+  <text x="840.0" y="120" text-anchor="middle" dominant-baseline="central" font-size="13px" font-weight="bold" fill="#FFFFFF">データベース</text>
+  <line x1="840.0" y1="138" x2="840.0" y2="595" stroke="#D5D8DC" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <line x1="60.0" y1="170" x2="320.0" y2="170" stroke="#636E72" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="190.0" y="162" text-anchor="middle" font-size="12px" fill="#2D3436">ログインボタン押下</text>
+  <line x1="320.0" y1="225" x2="580.0" y2="225" stroke="#636E72" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="450.0" y="217" text-anchor="middle" font-size="12px" fill="#2D3436">POST /auth/login</text>
+  <line x1="580.0" y1="280" x2="840.0" y2="280" stroke="#636E72" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="710.0" y="272" text-anchor="middle" font-size="12px" fill="#2D3436">SELECT user WHERE email=?</text>
+  <line x1="840.0" y1="335" x2="580.0" y2="335" stroke="#636E72" stroke-width="1.5" marker-end="url(#arrowhead)" stroke-dasharray="6,3"/>
+  <text x="710.0" y="327" text-anchor="middle" font-size="12px" fill="#2D3436">ユーザーデータ返却</text>
+  <path d="M580.0,390 L640.0,390 L640.0,410 L580.0,410" fill="none" stroke="#636E72" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="646.0" y="400" text-anchor="start" font-size="12px" fill="#2D3436">JWT生成</text>
+  <line x1="580.0" y1="445" x2="320.0" y2="445" stroke="#636E72" stroke-width="1.5" marker-end="url(#arrowhead)" stroke-dasharray="6,3"/>
+  <text x="450.0" y="437" text-anchor="middle" font-size="12px" fill="#2D3436">200 OK + token</text>
+  <line x1="320.0" y1="500" x2="60.0" y2="500" stroke="#636E72" stroke-width="1.5" marker-end="url(#arrowhead)" stroke-dasharray="6,3"/>
+  <text x="190.0" y="492" text-anchor="middle" font-size="12px" fill="#2D3436">ダッシュボード表示</text>
+  <rect x="60" y="585" width="780" height="50" rx="8" fill="#E8F8F5" stroke="#00B894" stroke-width="2"/>
+  <text x="450.0" y="610.0" text-anchor="middle" font-size="14px"  fill="#2D3436" dominant-baseline="central">✦ 実線=リクエスト、破線=レスポンス</text>
+</svg>

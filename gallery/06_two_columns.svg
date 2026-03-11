@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1000 805.6"
+     width="1000" height="805.6"
+     role="img" aria-labelledby="diagram-title diagram-desc"
+     style="font-family: 'Noto Sans CJK JP', 'Hiragino Sans', 'Yu Gothic', 'sans-serif';">
+  <title id="diagram-title">業務改善 ギャップ分析</title>
+  <desc id="diagram-desc"></desc>
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#D5D8DC" flood-opacity="0.4"/>
+    </filter>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10"
+            refX="8" refY="5" orient="auto-start-reverse">
+      <polygon points="0 0, 10 5, 0 10" fill="#636E72"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="805.6" fill="#F5F7FA" rx="0"/>
+  <text x="500.0" y="76.8" text-anchor="middle" font-size="28px" font-weight="bold" fill="#2D3436" dominant-baseline="central">業務改善 ギャップ分析</text>
+  <rect x="120.0" y="153.6" width="280.0" height="40" rx="20" fill="#FF7675"/>
+  <text x="260.0" y="173.6" text-anchor="middle" font-size="20px" font-weight="bold" fill="#FFFFFF" dominant-baseline="central">As-Is（現状）</text>
+  <rect x="600.0" y="153.6" width="280.0" height="40" rx="20" fill="#00B894"/>
+  <text x="740.0" y="173.6" text-anchor="middle" font-size="20px" font-weight="bold" fill="#FFFFFF" dominant-baseline="central">To-Be（理想）</text>
+  <rect x="60" y="223.6" width="400.0" height="124" rx="8" fill="#FFFFFF" stroke="#FF7675" stroke-width="2" filter="url(#shadow)"/>
+  <text x="260.0" y="247.6" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">受注処理</text>
+  <text x="80" y="276.6" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">FAXとメールで受注</text>
+  <text x="80" y="298.6" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">手動でExcelに転記</text>
+  <text x="80" y="320.6" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">処理時間: 平均30分/件</text>
+  <rect x="540.0" y="223.6" width="400.0" height="124" rx="8" fill="#FFFFFF" stroke="#00B894" stroke-width="2" filter="url(#shadow)"/>
+  <text x="740.0" y="247.6" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">受注処理</text>
+  <text x="560.0" y="276.6" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">EC+APIで自動受注</text>
+  <text x="560.0" y="298.6" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">システム自動連携</text>
+  <text x="560.0" y="320.6" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">処理時間: 即時〜1分</text>
+  <rect x="60" y="367.6" width="400.0" height="124" rx="8" fill="#FFFFFF" stroke="#FF7675" stroke-width="2" filter="url(#shadow)"/>
+  <text x="260.0" y="391.6" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">在庫管理</text>
+  <text x="80" y="420.6" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">目視で棚卸し</text>
+  <text x="80" y="442.6" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">月1回の在庫確認</text>
+  <text x="80" y="464.6" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">欠品率: 5%</text>
+  <rect x="540.0" y="367.6" width="400.0" height="124" rx="8" fill="#FFFFFF" stroke="#00B894" stroke-width="2" filter="url(#shadow)"/>
+  <text x="740.0" y="391.6" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">在庫管理</text>
+  <text x="560.0" y="420.6" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">バーコード読取+IoT</text>
+  <text x="560.0" y="442.6" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">リアルタイム在庫把握</text>
+  <text x="560.0" y="464.6" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">欠品率: 0.5%以下</text>
+  <rect x="60" y="511.6" width="400.0" height="124" rx="8" fill="#FFFFFF" stroke="#FF7675" stroke-width="2" filter="url(#shadow)"/>
+  <text x="260.0" y="535.6" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">顧客対応</text>
+  <text x="80" y="564.6" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">電話+メールのみ</text>
+  <text x="80" y="586.6" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">対応履歴が属人的</text>
+  <text x="80" y="608.6" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">平均応答: 24時間</text>
+  <rect x="540.0" y="511.6" width="400.0" height="124" rx="8" fill="#FFFFFF" stroke="#00B894" stroke-width="2" filter="url(#shadow)"/>
+  <text x="740.0" y="535.6" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">顧客対応</text>
+  <text x="560.0" y="564.6" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">チャットbot+有人チャット</text>
+  <text x="560.0" y="586.6" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">CRMで一元管理</text>
+  <text x="560.0" y="608.6" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">平均応答: 5分以内</text>
+  <circle cx="500.0" cy="429.6" r="22" fill="#2D3436"/>
+  <text x="500.0" y="429.6" text-anchor="middle" dominant-baseline="central" font-size="14px" font-weight="bold" fill="#FFFFFF">VS</text>
+  <rect x="60" y="695.6" width="880" height="50" rx="8" fill="#E8F8F5" stroke="#00B894" stroke-width="2"/>
+  <text x="500.0" y="720.6" text-anchor="middle" font-size="14px"  fill="#2D3436" dominant-baseline="central">✦ 3領域の改善で年間コスト30%削減、顧客満足度20pt向上を目指す</text>
+</svg>

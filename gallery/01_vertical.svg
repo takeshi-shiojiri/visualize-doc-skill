@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1000 1175.2"
+     width="1000" height="1175.2"
+     role="img" aria-labelledby="diagram-title diagram-desc"
+     style="font-family: 'Noto Sans CJK JP', 'Hiragino Sans', 'Yu Gothic', 'sans-serif';">
+  <title id="diagram-title">LINE CRM施策の全体像</title>
+  <desc id="diagram-desc">友だち追加から売上貢献までの施策体系</desc>
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#D5D8DC" flood-opacity="0.4"/>
+    </filter>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10"
+            refX="8" refY="5" orient="auto-start-reverse">
+      <polygon points="0 0, 10 5, 0 10" fill="#636E72"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="1175.2" fill="#F5F7FA" rx="0"/>
+  <text x="500.0" y="76.8" text-anchor="middle" font-size="28px" font-weight="bold" fill="#2D3436" dominant-baseline="central">LINE CRM施策の全体像</text>
+  <text x="500.0" y="116.39999999999999" text-anchor="middle" font-size="18px"  fill="#636E72" dominant-baseline="central">友だち追加から売上貢献までの施策体系</text>
+  <rect x="420.0" y="187.2" width="160" height="40" rx="20" fill="#74B9FF"/>
+  <text x="500.0" y="207.2" text-anchor="middle" font-size="20px" font-weight="bold" fill="#FFFFFF" dominant-baseline="central">目的</text>
+  <rect x="192.0" y="267.2" width="616.0" height="80" rx="8" fill="#FFFFFF" stroke="#74B9FF" stroke-width="2" filter="url(#shadow)"/>
+  <text x="500.0" y="291.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">LINEを活用した顧客LTV最大化</text>
+  <text x="212.0" y="320.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">友だち追加→セグメント配信→購買促進→リピート化の一気通貫CRM</text>
+  <rect x="420.0" y="387.2" width="160" height="40" rx="20" fill="#00B894"/>
+  <text x="500.0" y="407.2" text-anchor="middle" font-size="20px" font-weight="bold" fill="#FFFFFF" dominant-baseline="central">ターゲット</text>
+  <rect x="60.0" y="457.2" width="280.0" height="102" rx="8" fill="#FFFFFF" stroke="#74B9FF" stroke-width="2" filter="url(#shadow)"/>
+  <text x="200.0" y="481.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">新規顧客</text>
+  <text x="80.0" y="510.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">ECサイト初回訪問者</text>
+  <text x="80.0" y="532.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">広告経由の流入層</text>
+  <rect x="360.0" y="457.2" width="280.0" height="102" rx="8" fill="#FFFFFF" stroke="#00B894" stroke-width="2" filter="url(#shadow)"/>
+  <text x="500.0" y="481.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">既存顧客</text>
+  <text x="380.0" y="510.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">購入経験あり</text>
+  <text x="380.0" y="532.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">休眠期間3ヶ月以内</text>
+  <rect x="660.0" y="457.2" width="280.0" height="102" rx="8" fill="#FFFFFF" stroke="#A29BFE" stroke-width="2" filter="url(#shadow)"/>
+  <text x="800.0" y="481.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">VIP顧客</text>
+  <text x="680.0" y="510.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">年間購入額10万円以上</text>
+  <text x="680.0" y="532.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">リピート率80%以上</text>
+  <rect x="420.0" y="599.2" width="160" height="40" rx="20" fill="#FDCB6E"/>
+  <text x="500.0" y="619.2" text-anchor="middle" font-size="20px" font-weight="bold" fill="#FFFFFF" dominant-baseline="central">施策内容</text>
+  <rect x="60.0" y="669.2" width="280.0" height="124" rx="8" fill="#FFFFFF" stroke="#74B9FF" stroke-width="2" filter="url(#shadow)"/>
+  <text x="200.0" y="693.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">友だち追加</text>
+  <text x="80.0" y="722.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">QRコード配布</text>
+  <text x="80.0" y="744.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">LP埋め込み</text>
+  <text x="80.0" y="766.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">インセンティブ設計</text>
+  <rect x="360.0" y="669.2" width="280.0" height="124" rx="8" fill="#FFFFFF" stroke="#00B894" stroke-width="2" filter="url(#shadow)"/>
+  <text x="500.0" y="693.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">セグメント配信</text>
+  <text x="380.0" y="722.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">購買履歴ベース</text>
+  <text x="380.0" y="744.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">タグ分類</text>
+  <text x="380.0" y="766.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">ステップ配信</text>
+  <rect x="660.0" y="669.2" width="280.0" height="124" rx="8" fill="#FFFFFF" stroke="#FDCB6E" stroke-width="2" filter="url(#shadow)"/>
+  <text x="800.0" y="693.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">リッチメニュー</text>
+  <text x="680.0" y="722.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">パーソナライズ表示</text>
+  <text x="680.0" y="744.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">セグメント別切替</text>
+  <text x="680.0" y="766.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">導線最適化</text>
+  <rect x="420.0" y="833.2" width="160" height="40" rx="20" fill="#FF7675"/>
+  <text x="500.0" y="853.2" text-anchor="middle" font-size="20px" font-weight="bold" fill="#FFFFFF" dominant-baseline="central">KPI</text>
+  <rect x="60.0" y="903.2" width="280.0" height="102" rx="8" fill="#FFFFFF" stroke="#74B9FF" stroke-width="2" filter="url(#shadow)"/>
+  <text x="200.0" y="927.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">友だち追加数</text>
+  <text x="80.0" y="956.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">月間+500人</text>
+  <text x="80.0" y="978.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">追加率15%</text>
+  <rect x="360.0" y="903.2" width="280.0" height="102" rx="8" fill="#FFFFFF" stroke="#00B894" stroke-width="2" filter="url(#shadow)"/>
+  <text x="500.0" y="927.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">配信開封率</text>
+  <text x="380.0" y="956.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">目標60%以上</text>
+  <text x="380.0" y="978.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">業界平均の1.5倍</text>
+  <rect x="660.0" y="903.2" width="280.0" height="102" rx="8" fill="#FFFFFF" stroke="#FF7675" stroke-width="2" filter="url(#shadow)"/>
+  <text x="800.0" y="927.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">LINE経由売上</text>
+  <text x="680.0" y="956.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">月商の20%</text>
+  <text x="680.0" y="978.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">ROAS 400%以上</text>
+  <line x1="500.0" y1="355.2" x2="500.0" y2="379.2" stroke="#636E72" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="500.0" y1="567.2" x2="500.0" y2="591.2" stroke="#636E72" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="500.0" y1="801.2" x2="500.0" y2="825.2" stroke="#636E72" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <rect x="60" y="1065.2" width="880" height="50" rx="8" fill="#E8F8F5" stroke="#00B894" stroke-width="2"/>
+  <text x="500.0" y="1090.2" text-anchor="middle" font-size="14px"  fill="#2D3436" dominant-baseline="central">✦ 友だち数×開封率×CVR×客単価 = LINE経由売上</text>
+</svg>

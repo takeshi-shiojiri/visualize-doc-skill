@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1000 677.2"
+     width="1000" height="677.2"
+     role="img" aria-labelledby="diagram-title diagram-desc"
+     style="font-family: 'Noto Sans CJK JP', 'Hiragino Sans', 'Yu Gothic', 'sans-serif';">
+  <title id="diagram-title">CRMツール選定 スコアカード</title>
+  <desc id="diagram-desc">重み付き評価による選定</desc>
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#D5D8DC" flood-opacity="0.4"/>
+    </filter>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10"
+            refX="8" refY="5" orient="auto-start-reverse">
+      <polygon points="0 0, 10 5, 0 10" fill="#636E72"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="677.2" fill="#F5F7FA" rx="0"/>
+  <text x="500.0" y="76.8" text-anchor="middle" font-size="28px" font-weight="bold" fill="#2D3436" dominant-baseline="central">CRMツール選定 スコアカード</text>
+  <text x="500.0" y="116.39999999999999" text-anchor="middle" font-size="18px"  fill="#636E72" dominant-baseline="central">重み付き評価による選定</text>
+  <rect x="259.46666666666664" y="192.2" width="187.73333333333335" height="40" rx="20" fill="#74B9FF"/>
+  <text x="353.3333333333333" y="212.2" text-anchor="middle" font-size="20px" font-weight="bold" fill="#FFFFFF" dominant-baseline="central">Salesforce</text>
+  <rect x="494.1333333333333" y="192.2" width="187.73333333333335" height="40" rx="20" fill="#FF7675"/>
+  <text x="588.0" y="212.2" text-anchor="middle" font-size="20px" font-weight="bold" fill="#FFFFFF" dominant-baseline="central">HubSpot</text>
+  <rect x="728.8" y="192.2" width="187.73333333333335" height="40" rx="20" fill="#00B894"/>
+  <text x="822.6666666666666" y="212.2" text-anchor="middle" font-size="20px" font-weight="bold" fill="#FFFFFF" dominant-baseline="central">Zoho CRM</text>
+  <rect x="60" y="237.2" width="880" height="54" rx="0" fill="#FFFFFF"/>
+  <text x="148.0" y="264.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">機能充実度</text>
+  <text x="256.0" y="264.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">5/5 - 業界最多の機能</text>
+  <text x="490.66666666666663" y="264.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">4/5 - マーケ統合が強み</text>
+  <text x="725.3333333333333" y="264.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">3/5 - 基本機能は十分</text>
+  <rect x="60" y="291.2" width="880" height="54" rx="0" fill="#FAFBFC"/>
+  <text x="148.0" y="318.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">カスタマイズ性</text>
+  <text x="256.0" y="318.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">5/5 - Apex開発可能</text>
+  <text x="490.66666666666663" y="318.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">3/5 - テンプレートベース</text>
+  <text x="725.3333333333333" y="318.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">4/5 - APIが充実</text>
+  <rect x="60" y="345.2" width="880" height="54" rx="0" fill="#FFFFFF"/>
+  <text x="148.0" y="372.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">料金</text>
+  <text x="256.0" y="372.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">2/5 - 高コスト</text>
+  <text x="490.66666666666663" y="372.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">4/5 - 無料プランあり</text>
+  <text x="725.3333333333333" y="372.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">5/5 - 最安クラス</text>
+  <rect x="60" y="399.2" width="880" height="54" rx="0" fill="#FAFBFC"/>
+  <text x="148.0" y="426.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">導入容易性</text>
+  <text x="256.0" y="426.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">2/5 - 専門人材が必要</text>
+  <text x="490.66666666666663" y="426.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">5/5 - 直感的なUI</text>
+  <text x="725.3333333333333" y="426.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">4/5 - ガイド充実</text>
+  <rect x="60" y="453.2" width="880" height="54" rx="0" fill="#FFFFFF"/>
+  <text x="148.0" y="480.2" text-anchor="middle" font-size="16px" font-weight="bold" fill="#2D3436" dominant-baseline="central">サポート体制</text>
+  <text x="256.0" y="480.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">4/5 - 24h対応（有償）</text>
+  <text x="490.66666666666663" y="480.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">4/5 - 日本語対応</text>
+  <text x="725.3333333333333" y="480.2" text-anchor="start" font-size="14px"  fill="#2D3436" dominant-baseline="central">3/5 - 英語中心</text>
+  <line x1="60" y1="237.2" x2="940" y2="237.2" stroke="#D5D8DC" stroke-width="1"/>
+  <line x1="60" y1="291.2" x2="940" y2="291.2" stroke="#D5D8DC" stroke-width="1"/>
+  <line x1="60" y1="345.2" x2="940" y2="345.2" stroke="#D5D8DC" stroke-width="1"/>
+  <line x1="60" y1="399.2" x2="940" y2="399.2" stroke="#D5D8DC" stroke-width="1"/>
+  <line x1="60" y1="453.2" x2="940" y2="453.2" stroke="#D5D8DC" stroke-width="1"/>
+  <line x1="60" y1="507.2" x2="940" y2="507.2" stroke="#D5D8DC" stroke-width="1"/>
+  <line x1="236.0" y1="237.2" x2="236.0" y2="507.2" stroke="#D5D8DC" stroke-width="1"/>
+  <rect x="60" y="567.2" width="880" height="50" rx="8" fill="#E8F8F5" stroke="#00B894" stroke-width="2"/>
+  <text x="500.0" y="592.2" text-anchor="middle" font-size="14px"  fill="#2D3436" dominant-baseline="central">✦ 総合: HubSpot 20pt &gt; Zoho 19pt &gt; Salesforce 18pt</text>
+</svg>
